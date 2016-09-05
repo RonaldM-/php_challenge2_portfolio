@@ -1,3 +1,12 @@
+## Travail en cours 
+
+1- Les effets js ne sont pas terminés càd la transition entre passage portfolio dev, accueil et design.
+
+2- Le design et les couleurs ne sont pas figés
+
+En clair, je n'ai pas fini. Désolé
+
+#
 # Portfolio
 
 The target of this challenge is to realize your own portfolio. 

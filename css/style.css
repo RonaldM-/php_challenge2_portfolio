@@ -49,8 +49,8 @@ html, body { height:100%;}
 .whoami{
     border-radius: 50%;
     border: 4px solid gray;
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
 }
 
 .socialnetwork{
@@ -63,5 +63,49 @@ html, body { height:100%;}
 
 i{
     margin: 20px;
-    font-size: 30px;
+    font-size: 20px;
 }
+.projects{
+    height: auto;
+/*
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+*/
+}
+.project{
+    float: left;
+    position: relative;
+    background-color: #FA4444;
+    overflow: hidden;
+    height: 250px;
+    width: 200px;
+    margin: 10px;
+}
+
+.pbox_title{
+    position: absolute;
+    bottom:-65px;
+    background: black;
+}
+.pbox_title h2{
+    color: white;
+    font-size: 16px;
+}
+
+.pbox_technologies{
+    visibility: hidden;
+    background-color: red;
+    bottom: 60px;
+    width: 0;
+}
+
+}
+.pbox_link{
+
+    bottom: -160px;
+}
+
+/****KEYFRAMES****/
+

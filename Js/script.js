@@ -4,4 +4,10 @@ $(document).ready(function(){
         $("#center").removeClass("col-md-12").addClass("col-md-3");
         $(".info").removeClass("col-md-4 col-md-offset-4").addClass("col-md-12");
     });
+    $(".project").mouseover(function(){
+        $(this).find(".pbox_title").clearQueue().delay(100).animate({bottom: '120px'});
+    });
+    $(".project").mouseleave(function(){
+        $(this).find(".pbox_title").clearQueue().delay(50).animate({bottom: '-65px'});
+    });
 });

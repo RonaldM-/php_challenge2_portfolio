@@ -12,39 +12,49 @@ html
     body
         //-MIXIN FOR PROJECT 
         mixin project(title,thumbnail,techno,link)
-            .row.projects
-                .project.col-md-12
-                    h2= title
-                    img(src= thumbnail)
-                    p= techno
-                    a(href= link) Website
+
+                .project
+                        img(src= thumbnail)
+                        .pbox_title.col-md-12.text-center
+                            h2= title
+                        .pbox_technologies.col-md-12.text-center= techno
+                        .pbox_link.col-md-12.text-center
+                            a(href= link) Website
                     
                     
                     
         header
                 nav.navbar
                     .container-fluid
-                            //-.collapse.navbar-collapse.navbar-ex1-collapse
                             ul.nav.navbar-nav
                                 -var list = {home:"index.html", about:"about.html", skill:"#", contact:"contact.html"}
                                 each link, item in list
                                     li.text-uppercase: a(href= link) #{item}
         div#page.container-fluid
                 aside#left.overlay.closed
-                    .overlay.col-md-12
-                        div.content_design.col-md-pull-4.bg-primary.overlay
                             p My last projects
-                            +project(
-                                "project1",
-                                "#",
-                                "Le All Day In débarque pour sa 2ème édition, le dimanche 24 juillet 2016, Plage des Raisins Clairs en Guadeloupe. Les plus grands DJ de la Caraïbe t’y attendent avec en Guest Stars internationales : DJ SNAKE et Kerwin DUBOIS.",
-                                "#"
-                                )
-                            +project("project2","#","mon premier projet","#")
-                            +project("project3","#","mon premier projet","#")
-                            +project("project4","#","mon premier projet","#")
-                            +project("project5","#","mon premier projet","#")
-                            +project("project6","#","mon premier projet","#")
+                            .projects
+                                +project(
+                                    "project1",
+                                    "images/index.png",
+                                    "{html5}",
+                                    "#"
+                                    )
+                                +project(
+                                    "project2",
+                                    "images/index.png",
+                                    "mon premier projet",
+                                    "#"
+                                    )
+                                +project(
+                                    "project3",
+                                    "images/index.png",
+                                    "mon premier projet",
+                                    "#"
+                                    )
+                                +project("project4","images/index.png","mon premier projet","#")
+                                +project("project5","images/index.png","mon premier projet","#")
+                                +project("project6","images/index.png","mon premier projet","#")
                 section#center.middle.col-md-12.text-center
                   .row
                    .container-fluid
