@@ -49,7 +49,7 @@ html
                                 +project(
                                     "project3",
                                     "images/index.png",
-                                    "mon premier projet",
+                                    "mon premier proj",
                                     "#"
                                     )
                                 +project("project4","images/index.png","mon premier projet","#")
