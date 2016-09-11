@@ -7,8 +7,8 @@ module.exports = function(grunt) {
 
     watch: {
         pug:{
-            files: "views/*.pug",
-            tasks: "pug"
+            files: ["views/pug/*.pug","views/slim/*.slim"],
+            tasks: ["pug"]
         }
     },
 
@@ -17,21 +17,38 @@ module.exports = function(grunt) {
             options: {
                 pretty: true
             },
-            files: {
-                'about.html': 'views/about.pug',
-                'index.html': 'views/index.pug',
-                'contact.html': 'views/contact.pug'
-            }
+            files: [{
+            expand: true,
+            cwd: 'views/pug/',
+            src: ['{,*/}*.pug'],
+            dest: '',
+            ext: '.html'
+          }]
         }
-    }
+    },
+    slim: {
+        compile: {
+            options: {
+                pretty: true
+            },
+          files: [{
+            expand: true,
+            cwd: 'views/slim/',
+            src: ['{,*/}*.slim'],
+            dest: '',
+            ext: '.html'
+          }]
+        }
+      }
 
   });
 
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-pug');
+  grunt.loadNpmTasks('grunt-slim');
 
   // Default task.
-  grunt.registerTask('default', ['pug']);
+  grunt.registerTask('default', ['pug', 'watch']);
 
 };
