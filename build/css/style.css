@@ -52,6 +52,7 @@ p.intro{
     color: #000;
 }
 section#home{
+
     height: 100%;
 }
 .intro_me{
@@ -74,15 +75,55 @@ section#home{
     color: #FFF;
     font-size: 31px;
 }
-.coder{
+#coder{
     margin-left: 10%;
     margin-top: 3.50%;
     float: left;
     padding-left: 5%;
 }
-.designer{
+#designer{
     margin-right: 10%;
     margin-top: 3.50%;
     float: right;
     padding-left: 3%;
 }
+/**
+EFFECT
+*/
+.open{
+    width: 75%;
+}
+.closed{
+    width: 0%;
+}
+.home{
+    float: right;
+}
+.home_small{
+    float:right;
+    width: 25%;
+    padding: 0;
+    margin: 0;
+}
+#development{
+    overflow: hidden;
+    float: left;
+    padding:0;
+    margin: 0;
+}
+#design{
+    float:right;
+    padding: 0;
+    margin:0;
+}
+/**
+SECTION DEVELOPMENT
+*/
+section#development{
+    height: 100%;
+    background-color: red;
+    padding:0;
+}
+/**
+SECTION DESIGN
+*/
