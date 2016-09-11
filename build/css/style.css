@@ -57,6 +57,9 @@ section#home{
 }
 .intro_me{
     height: 82%;
+    width: 21%;
+    min-width: 382.5px;
+    margin: 0 auto;
 }
 .intro_bottom{
     background: #FEEECC;
@@ -121,9 +124,53 @@ SECTION DEVELOPMENT
 */
 section#development{
     height: 100%;
-    background-color: red;
+    background-color: #F5F5F5;
     padding:0;
 }
 /**
 SECTION DESIGN
 */
+
+/**
+GALLERY BOX SIZES
+*/
+
+.navlist{
+    height: 18%;
+}
+.navlist ul{
+    bottom: 20%;
+    position: absolute;
+}
+.navlist ul li{
+    margin-right: 18px;
+}
+.gallery{
+/*
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+*/
+}
+.box{
+    overflow: hidden;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.box_small{
+    height: 200px;
+    background-color: blue;
+}
+.box_large{
+    height: 360px;
+    background-color: black;
+
+}
+.block{
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+}
+.caption{
+    position: absolute;
+    bottom: 0%;
+}
