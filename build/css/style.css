@@ -1,0 +1,88 @@
+html, body {
+    height:100%;
+}
+/**
+    col-lg-4-5
+*/
+.col-lg-offset-4-5 {
+    margin-left: 37.49667%;
+}
+#home.container-fluid{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+h1{
+    margin-top: 38%!important;
+    font-family: 'Shadows Into Light Two', cursive!important;
+    font-size: 41px !important;
+    text-transform: uppercase;
+}
+h3{
+    font-family: 'Shadows Into Light Two', cursive !important;
+    font-size: 14px !important;
+    color: #666666 !important;
+    margin-bottom: 29px !important;
+    margin-top: 12px!important;
+    text-transform: uppercase;
+}
+
+ul li{
+    list-style: none;
+}
+a{
+    font-size: 20px;
+    color: #000!important;
+}
+a:hover,
+a:focus{
+    text-decoration: none!important;
+}
+p.intro{
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.social{
+    margin-bottom: 39px;
+}
+
+.menu a{
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+    color: #000;
+}
+section#home{
+    height: 100%;
+}
+.intro_me{
+    height: 82%;
+}
+.intro_bottom{
+    background: #FEEECC;
+    height: 18%;
+}
+
+.button{
+    display: block;
+    background-color: #CC3300;
+    height: 48px;
+    width: 213px;
+    font-family: 'Josefin Slab', serif;
+}
+.button {
+    padding-top: 0.3%;
+    color: #FFF;
+    font-size: 31px;
+}
+.coder{
+    margin-left: 10%;
+    margin-top: 3.50%;
+    float: left;
+    padding-left: 5%;
+}
+.designer{
+    margin-right: 10%;
+    margin-top: 3.50%;
+    float: right;
+    padding-left: 3%;
+}
