@@ -9,10 +9,12 @@ html
     link(href='build/css/ionicons.min.css', rel='stylesheet', type='text/css')
     link(href='https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet')
     link(href='https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet')
-
+    script(src='https://code.jquery.com/jquery-1.12.4.js')
+    script(src='https://code.jquery.com/ui/1.12.0/jquery-ui.js')
+    script(src='build/js/script.js')
   body
 
-        section#home.container-fluid
+        section#home.home
             .intro_me.col-lg-3.col-lg-offset-4-5
                 h1.col-lg-12.text-center Ronald</br>Marcel
                 h3.col-lg-12.text-center Product Designer </br> Developper Front-End
@@ -33,7 +35,54 @@ html
                         li.text-capitalize.col-lg-12: a(href= link) #{item}
 
             .intro_bottom.col-lg-12
-                .button.coder.text-capitalize coder
-                .button.designer.text-capitalize designer
-        section#development
+                .button#coder.text-capitalize coder
+                .button#designer.text-capitalize designer
+        section#development.closed
+            .row
+                .navlist
+                    .ul
+                        .li.all
+                        .li.website
+                        .li.app
+                .gallery.col-lg-10.col-lg-offset-1
+                    .box.col-lg-3
+                        .title_project
+                            h4
+                        .details
+                            p {html} {css3} {js}
+                    .box.col-lg-3
+                        .title_project
+                            h4
+                        .details
+                            p {html} {css3} {js}
+                    .box.col-lg-3
+                        .title_project
+                            h4
+                        .details
+                            p {html} {css3} {js}
+                    .box.col-lg-3
+                        .title_project
+                            h4
+                        .details
+                            p {html} {css3} {js}
+                    .box
+                        .title_project
+                            h4
+                        .details
+                            p {html} {css3} {js}
+                    .box
+                        .title_project
+                            h4
+                        .details
+                            p {html} {css3} {js}
+                    .box
+                        .title_project
+                            h4
+                        .details
+                            p {html} {css3} {js}
+                    .box
+                        .title_project
+                            h4
+                        .details
+                            p {html} {css3} {js}
         section#design
