@@ -14,7 +14,12 @@ $(document).ready(function(){
 
 
 
-
+function(n) {
+  var i = $(e).find(".cb-contacts-request");
+  i.find(".cb-contacts-request-form").show(), i.find(".cb-contacts-request-message").hide();
+  var c = t.contacts.modal.open(i);
+  i.show(), c.play()
+}
 
 
 
