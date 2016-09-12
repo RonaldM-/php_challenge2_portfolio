@@ -1,0 +1,74 @@
+head
+
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
+    link(href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+
+body
+    style.
+        .bt{
+            border: solid 1px #000;
+            padding: 17px 23px;
+            text-align: center;
+            color: red;
+            font-size: 11px;
+            text-transform: uppercase;
+            font-family: Montserrat,"Open Sans",sans-serif;
+            background: transparent;
+            letter-spacing: 2.2px;
+
+        }
+        form{
+            display:non;
+        }
+        .form_input{
+            width: 100%;
+            padding: 15px 10px;
+            border: 0;
+            border-bottom: 1px #c5c5c5 solid;
+            font-family: Montserrat,"Open Sans",sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: .6px;
+            color: #000;
+            transition: all .2s;
+        }
+        textarea{
+            resize:none;
+        }
+    section#contact
+        .container-fluid
+            #formcontact.row
+                //il pour me contacter il peut entrer une address mail
+                  Sont nom et prénom
+                  remplir le champs de contact en commençant par:
+                  Un objet
+                  Le contenu de son message
+                #box_contact.col-lg-12
+
+                    form.col-lg-8(action="send/email.php" method="post")
+                        .title
+                            p(style="transform: matrix(1, 0, 0, 1, 0, 0);") Envoyer
+                        .form-group
+                            input.form_input(name="name" type="text" placeholder="Votre nom")
+                        .form-group
+                            input.form_input(name="email" type="email" placeholder="Votre adresse mail")
+                        .form-group
+                            input.form_input(name="objet" type="text" placeholder="Le sujet de votre message")
+                        .form-group
+                            textarea.form_input(name="content" rows="10" placeholder="Votre message")
+
+                    address.coordonnee.col-lg-4
+                        p.message Vous avez un projet, besoin d'un conseil ou tout simplement une question à me poser?
+                        p ronaldmarcel[at]ronaldmarcel.com
+
+                        button.bt request a quote
+
+script.
+    $(document).ready(function(){
+        $("button").clic(function(){
+            $("#box_contact").find("form").show(3000),
+            $("#box_contact").find("address").hide(3000);
+
+            });
+    });
