@@ -174,3 +174,7 @@ GALLERY BOX SIZES
     position: absolute;
     bottom: 0%;
 }
+
+.box_img{
+    display: block;
+}
