@@ -1,0 +1,64 @@
+<!DOCTYPE html5>
+<html></html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+  <style>
+    .box{
+        width: 260px;
+        height: 400px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        border-radius: 2px;
+        display: none;
+        }
+    .box_img{
+            position: absolute;
+            width: auto;
+            height: 120%;
+            right: -58.5%;
+            bottom: 0px;
+            }
+
+    img{
+        height: 100%;
+        }
+    .desc{
+            background-color:#FA4444;
+            color: white;
+            position: absolute;
+            bottom: 0px;
+            text-align: center;
+            width: 100%;
+            z-index: -1;
+
+        }
+  </style>
+  <div class="box">
+    <div class="box_img"><img src="ressources/img/13.jpg"/></div>
+    <div class="desc">
+      <div class="title_project col-lg-12">
+        <h4>Projet 1</h4>
+      </div>
+      <div class="details col-lg-12">
+        <p>{html} {css3} {js}</p>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function(){
+        $(window).load(function(){
+            $('.box').fadeIn(3000);
+        });
+        $('.box').mouseover(function(){
+            $(this).find('.box_img').clearQueue().delay(50).animate({bottom: '90px'}, 1000);
+        });
+        $('.box').mouseout(function(){
+            $(this).find('.box_img').clearQueue().delay(50).animate({bottom: '0px'}, 1000);
+        });
+    });
+  </script>
+</body>
