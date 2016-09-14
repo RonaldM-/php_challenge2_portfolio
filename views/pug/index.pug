@@ -15,7 +15,7 @@ html
   body
 
         section#home.home
-            .intro_me //.col-lg-3.col-lg-offset-4
+            .intro_me
                 h1.col-lg-12.text-center Ronald</br>Marcel
                 h3.col-lg-12.text-center Product Designer </br> Developper Front-End
                 p.intro.col-lg-12.text-center Hello! My name is Pierre Nel, and I'm a London-based freelancer. If I'm not freelancing at some of London's finest digital agencies, I'm working remotely on projects for clients all over the world.<br>I have a diverse set of skills, ranging from design, to HTML + CSS + Javascript, all the way to PHP, custom Drupal module development and Linux server administration.
@@ -37,7 +37,8 @@ html
             .intro_bottom.col-lg-12
                 .button#coder.text-capitalize coder
                 .button#designer.text-capitalize designer
-        section#development.closed
+
+        section#development.closed_left
             .container-fluid
                 .navlist.col-lg-2.col-lg-offset-10
                     ul.nav.nav-pills
@@ -46,57 +47,154 @@ html
                         li app
                 .gallery.col-lg-10.col-lg-offset-1
                     .block.col-lg-3
-                        .box.box_large.col-lg-12.text-center
-                            .caption
-                                .box_img
-                                    img(src='ressources/img/13.jpg')
+                        .box.box_large.col-lg-12
+                            .box_img.box_img_large
+                                img(src='ressources/img/13.jpg')
+                            .desc
                                 .title_project.col-lg-12
                                     h4 Projet 1
                                 .details.col-lg-12
                                     p {html} {css3} {js}
-                        .box.box_small.col-lg-12.text-center
-                            .caption
+                        .box.box_small.col-lg-12
+                            .box_img.box_img_small
+                                img(src='ressources/img/13.jpg')
+                            .desc
                                 .title_project.col-lg-12
                                     h4 Projet 1
                                 .details.col-lg-12
                                     p {html} {css3} {js}
+
                     .block.col-lg-3
-                        .box.box_small.col-lg-12.text-center
-                            .caption
+                        .box.box_small.col-lg-12
+                            .box_img.box_img_small
+                                img(src='ressources/img/13.jpg')
+                            .desc
                                 .title_project.col-lg-12
                                     h4 Projet 1
                                 .details.col-lg-12
                                     p {html} {css3} {js}
-                        .box.box_large.col-lg-12.text-center
-                            .caption
+                        .box.box_large.col-lg-12
+                            .box_img.box_img_large
+                                img(src='ressources/img/13.jpg')
+                            .desc
                                 .title_project.col-lg-12
-                                    h4 Projet
+                                    h4 Projet 1
                                 .details.col-lg-12
                                     p {html} {css3} {js}
+
                     .block.col-lg-3
-                        .box.box_large.col-lg-12.text-center
-                            .caption
+                        .box.box_large.col-lg-12
+                            .box_img.box_img_large
+                                img(src='ressources/img/13.jpg')
+                            .desc
                                 .title_project.col-lg-12
                                     h4 Projet 1
                                 .details.col-lg-12
                                     p {html} {css3} {js}
-                        .box.box_small.col-lg-12.text-center
-                            .caption
+                        .box.box_small.col-lg-12
+                            .box_img.box_img_small
+                                img(src='ressources/img/13.jpg')
+                            .desc
                                 .title_project.col-lg-12
                                     h4 Projet 1
                                 .details.col-lg-12
                                     p {html} {css3} {js}
+
                     .block.col-lg-3
-                        .box.box_small.col-lg-12.text-center
-                            .caption
+                        .box.box_small.col-lg-12
+                            .box_img.box_img_small
+                                img(src='ressources/img/13.jpg')
+                            .desc
                                 .title_project.col-lg-12
                                     h4 Projet 1
                                 .details.col-lg-12
                                     p {html} {css3} {js}
-                        .box.box_large.col-lg-12.text-center
-                            .caption
+                        .box.box_large.col-lg-12
+                            .box_img.box_img_large
+                                img(src='ressources/img/13.jpg')
+                            .desc
                                 .title_project.col-lg-12
                                     h4 Projet 1
                                 .details.col-lg-12
                                     p {html} {css3} {js}
-        section#design
+
+
+        section#design.closed_right
+            .container-fluid
+                .navlist_right.col-lg-2.col-lg-offset-10
+                    ul.right.nav.nav-pills
+                        li all
+                        li website
+                        li app
+                .gallery.col-lg-10.col-lg-offset-1
+                    .block.col-lg-3
+                        .box.box_large.col-lg-12
+                            .box_img.box_img_large
+                                img(src='ressources/img/13.jpg')
+                            .desc
+                                .title_project.col-lg-12
+                                    h4 Projet 1
+                                .details.col-lg-12
+                                    p {html} {css3} {js}
+                        .box.box_small.col-lg-12
+                            .box_img.box_img_small
+                                img(src='ressources/img/13.jpg')
+                            .desc
+                                .title_project.col-lg-12
+                                    h4 Projet 1
+                                .details.col-lg-12
+                                    p {html} {css3} {js}
+
+                    .block.col-lg-3
+                        .box.box_small.col-lg-12
+                            .box_img.box_img_small
+                                img(src='ressources/img/13.jpg')
+                            .desc
+                                .title_project.col-lg-12
+                                    h4 Projet 1
+                                .details.col-lg-12
+                                    p {html} {css3} {js}
+                        .box.box_large.col-lg-12
+                            .box_img.box_img_large
+                                img(src='ressources/img/13.jpg')
+                            .desc
+                                .title_project.col-lg-12
+                                    h4 Projet 1
+                                .details.col-lg-12
+                                    p {html} {css3} {js}
+
+                    .block.col-lg-3
+                        .box.box_large.col-lg-12
+                            .box_img.box_img_large
+                                img(src='ressources/img/13.jpg')
+                            .desc
+                                .title_project.col-lg-12
+                                    h4 Projet 1
+                                .details.col-lg-12
+                                    p {html} {css3} {js}
+                        .box.box_small.col-lg-12
+                            .box_img.box_img_small
+                                img(src='ressources/img/13.jpg')
+                            .desc
+                                .title_project.col-lg-12
+                                    h4 Projet 1
+                                .details.col-lg-12
+                                    p {html} {css3} {js}
+
+                    .block.col-lg-3
+                        .box.box_small.col-lg-12
+                            .box_img.box_img_small
+                                img(src='ressources/img/13.jpg')
+                            .desc
+                                .title_project.col-lg-12
+                                    h4 Projet 1
+                                .details.col-lg-12
+                                    p {html} {css3} {js}
+                        .box.box_large.col-lg-12
+                            .box_img.box_img_large
+                                img(src='ressources/img/13.jpg')
+                            .desc
+                                .title_project.col-lg-12
+                                    h4 Projet 1
+                                .details.col-lg-12
+                                    p {html} {css3} {js}

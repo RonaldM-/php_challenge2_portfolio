@@ -93,17 +93,29 @@ section#home{
 /**
 EFFECT
 */
+
+.box{
+/*    display: none;*/
+
+}
+
 .open{
     width: 75%;
 }
-.closed{
+.closed_right,.closed_left{
     width: 0%;
 }
 .home{
-    float: right;
+float: right;
 }
 .home_small{
     float:right;
+    width: 25%;
+    padding: 0;
+    margin: 0;
+}
+.home_small_left{
+    float: left;
     width: 25%;
     padding: 0;
     margin: 0;
@@ -115,6 +127,7 @@ EFFECT
     margin: 0;
 }
 #design{
+    overflow: hidden;
     float:right;
     padding: 0;
     margin:0;
@@ -130,13 +143,18 @@ section#development{
 /**
 SECTION DESIGN
 */
-
+section#design{
+    height: 100%;
+    background-color: blueviolet;
+    padding: 0;
+}
 /**
 GALLERY BOX SIZES
 */
 
 .navlist{
-    height: 18%;
+    margin-bottom: 2%;
+    height: 10%;
 }
 .navlist ul{
     bottom: 20%;
@@ -152,29 +170,69 @@ GALLERY BOX SIZES
     flex-wrap: wrap;
 */
 }
-.box{
-    overflow: hidden;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
+
 .box_small{
     height: 200px;
-    background-color: blue;
 }
 .box_large{
     height: 360px;
-    background-color: black;
+
 
 }
-.block{
-    padding-left: 10px!important;
-    padding-right: 10px!important;
+
+/*Gallerie box*/
+.box{
+
+    padding: 0!important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 260px;
+        position: relative;
+/*
+        margin-left: auto;
+        margin-right: auto;
+*/
+        overflow: hidden;
+        border-radius: 2px;
+
+    }
+.box_img_large{
+        position: absolute;
+        width: auto;
+        height: 120%;
+        right: -65.5%;
+        bottom: 0px;
+        z-index: 1;
+        }
+.box_img_small{
+        position: absolute;
+        width: auto;
+        height: 120%;
+        right: -14.5%;
+        bottom: 0px;
+        z-index: 1;
+        }
+
+/*
+.box_img.box_small{
+        bottom: -13.5%;
 }
-.caption{
-    position: absolute;
-    bottom: 0%;
+*/
+
+img{
+    height: 100%;
+    }
+
+.desc{
+        background-color:#FA4444;
+        color: white;
+        position: absolute;
+        bottom: 0px;
+        text-align: center;
+        width: 100%;
 }
 
-.box_img{
-    display: block;
+.title_project, .details{
+    padding: 0;
+    width: 100%;
 }
