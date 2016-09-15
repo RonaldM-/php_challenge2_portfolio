@@ -7,11 +7,11 @@ html
     link(href='build/css/style.css', rel='stylesheet', type='text/css')
     link(href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
     link(href='build/css/ionicons.min.css', rel='stylesheet', type='text/css')
-    link(href='https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet')
-    link(href='https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet')
-    script(src='https://code.jquery.com/jquery-1.12.4.js')
+    link(href='build/css/jquery.fullPage.css')
+    script(src='build/js/jquery-2.2.4.js')
     script(src='https://code.jquery.com/ui/1.12.0/jquery-ui.js')
     script(src='build/js/script.js')
+    script(src='build/scrollify-master/jquery.scrollify.min.js')
   body
 
         section#home.home
@@ -30,7 +30,7 @@ html
                         a.icon.ion-social-googleplus(href="#")
 
                 ul.menu.col-lg-12.text-center
-                    -var list = {"home":"#", "about me":"#about", "skill":"#skill", "contact":"#contact"}
+                    -var list = {"home":"#home", "about me":"#about", "skill":"#skill", "contact":"#contact"}
                     each link, item in list
                         li.text-capitalize.col-lg-12: a(href= link) #{item}
 
@@ -198,3 +198,49 @@ html
                                     h4 Projet 1
                                 .details.col-lg-12
                                     p {html} {css3} {js}
+        nav
+        
+        section#about
+            .container-fluid
+                .row
+                    .about_me.col-lg-5.col-lg-offset-4
+                        h3 À propos
+                        article
+                            p Je m'appelle Eric Huguenin, je suis développeur front-end à Paris. J'aide les agences et les startups à concevoir et développer des expériences interactives.
+                            p Développeur front-end depuis 5ans, je n'ai pour but que de satisfaire mes clients en créant des sites interactifs dignes de ce nom. L'expérience utilisateur et la qualité sont les maîtres mots pour réaliser vos projets.
+        section#skill
+        section#contact
+            .container-fluid
+                #formcontact.row
+                    //il pour me contacter il peut entrer une address mail
+                      Sont nom et prénom
+                      remplir le champs de contact en commençant par:
+                      Un objet
+                      Le contenu de son message
+                    #box_contact.col-lg-12
+
+                        form.col-lg-8(action="send/email.php" method="post")
+                            .title
+                                p(style="transform: matrix(1, 0, 0, 1, 0, 0);") Envoyer
+                            .form-group
+                                input.form_input(name="name" type="text" placeholder="Votre nom")
+                            .form-group
+                                input.form_input(name="email" type="email" placeholder="Votre adresse mail")
+                            .form-group
+                                input.form_input(name="objet" type="text" placeholder="Le sujet de votre message")
+                            .form-group
+                                textarea.form_input(name="content" rows="10" placeholder="Votre message")
+
+                        address.coordonnee.col-lg-4
+                            p.message Vous avez un projet, besoin d'un conseil ou tout simplement une question à me poser?
+                            p ronaldmarcel[at]ronaldmarcel.com
+
+                            button.bt request a quote
+                            
+        script.
+            $(document).ready(function(){
+                $.scrollify({
+                        section : "#home",
+                        section : "#about",
+                    });
+            });

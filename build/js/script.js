@@ -2,6 +2,7 @@ $(document).ready(function(){
 /*ouverture et fermeture de mes parties design et developpement*/
     $("#coder").on("click", function(){
         $(".home").css({float:'right'});
+        $(".button").hide();
         $(".home").switchClass("home","home_small",1500);
         $(".closed_left").switchClass("closed_left","open", 1500 );
         $(".home_small").switchClass("home_small","home", 1500 );

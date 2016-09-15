@@ -8,11 +8,11 @@
     <link href="build/css/style.css" rel="stylesheet" type="text/css"/>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
     <link href="build/css/ionicons.min.css" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&quot; rel=&quot;stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab&quot; rel=&quot;stylesheet"/>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link href="build/css/jquery.fullPage.css"/>
+    <script src="build/js/jquery-2.2.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
     <script src="build/js/script.js"></script>
+    <script src="build/scrollify-master/jquery.scrollify.min.js"></script>
   </head>
   <body>
     <section class="home" id="home">
@@ -27,7 +27,7 @@
           <li class="col-lg-2"><a class="icon ion-social-googleplus" href="#"></a></li>
         </ul>
         <ul class="menu col-lg-12 text-center">
-          <li class="text-capitalize col-lg-12"><a href="#">home</a></li>
+          <li class="text-capitalize col-lg-12"><a href="#home">home</a></li>
           <li class="text-capitalize col-lg-12"><a href="#about">about me</a></li>
           <li class="text-capitalize col-lg-12"><a href="#skill">skill</a></li>
           <li class="text-capitalize col-lg-12"><a href="#contact">contact</a></li>
@@ -256,5 +256,64 @@
         </div>
       </div>
     </section>
+    <nav></nav>
+    <section id="about">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="about_me col-lg-5 col-lg-offset-4">
+            <h3>À propos</h3>
+            <article>
+              <p>Je m'appelle Eric Huguenin, je suis développeur front-end à Paris. J'aide les agences et les startups à concevoir et développer des expériences interactives.</p>
+              <p>Développeur front-end depuis 5ans, je n'ai pour but que de satisfaire mes clients en créant des sites interactifs dignes de ce nom. L'expérience utilisateur et la qualité sont les maîtres mots pour réaliser vos projets.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skill"></section>
+    <section id="contact">
+      <div class="container-fluid">
+        <div class="row" id="formcontact">
+          <!--il pour me contacter il peut entrer une address mail
+          Sont nom et prénom
+          remplir le champs de contact en commençant par:
+          Un objet
+          Le contenu de son message
+          -->
+          <div class="col-lg-12" id="box_contact">
+            <form class="col-lg-8" action="send/email.php" method="post">
+              <div class="title">
+                <p style="transform: matrix(1, 0, 0, 1, 0, 0)">Envoyer</p>
+              </div>
+              <div class="form-group">
+                <input class="form_input" name="name" type="text" placeholder="Votre nom"/>
+              </div>
+              <div class="form-group">
+                <input class="form_input" name="email" type="email" placeholder="Votre adresse mail"/>
+              </div>
+              <div class="form-group">
+                <input class="form_input" name="objet" type="text" placeholder="Le sujet de votre message"/>
+              </div>
+              <div class="form-group">
+                <textarea class="form_input" name="content" rows="10" placeholder="Votre message"></textarea>
+              </div>
+            </form>
+            <address class="coordonnee col-lg-4">
+              <p class="message">Vous avez un projet, besoin d'un conseil ou tout simplement une question à me poser?</p>
+              <p>ronaldmarcel[at]ronaldmarcel.com</p>
+              <button class="bt">request a quote</button>
+            </address>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      $(document).ready(function(){
+          $.scrollify({
+                  section : "#home",
+                  section : "#about",
+              });
+      });
+    </script>
   </body>
 </html>
