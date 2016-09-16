@@ -486,7 +486,7 @@ width:110px;
 .close_gallery{
     font-family:'Dosis', sans-serif;
     font-size: 18px;
-    margin-top: 10%;
+    margin-top: 1%;
     color: blue;
 }
 .close_gallery p:hover:before{
