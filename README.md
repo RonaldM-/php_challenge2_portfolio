@@ -1,3 +1,21 @@
+#
+# Rendu Du Vendredi 16.09.2016
+
+#Compte Rendu
+1- Les animations qui doivent accompagner les partie skill, about son absentes. Pas eu le temps de les générées.
+
+2- Les slides sur les cotés, après un deuxième clic ne fonctionne plus. Il faut que je sache pour quoi, ce week end
+
+3- Pas eu le temps de mettre les hovers sur les liens, c'est censé être les mêmes que sur le bouton close de la galerie.
+
+4- Css Js pas propre
+
+5- Il y n' a que le fichier HTML qui l'ai.
+
+6- Absent total du responsive. Sorry !
+
+Grosso modo Je ne suis pas satisfait de mon rendu, à cause de certain problème techniques que j'ai du géré à côté, car il est vrai le projet étais trop ambicieux!
+
 ## Travail en cours 
 
 1- Les effets js ne sont pas terminés càd la transition entre passage portfolio dev, accueil et design.

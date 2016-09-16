@@ -12,6 +12,7 @@ html
     script(src='https://code.jquery.com/ui/1.12.0/jquery-ui.js')
     script(src='build/js/script.js')
     script(src='build/scrollify-master/jquery.scrollify.min.js')
+    script(src='node_modules/progressbar.js/progressbar.min.js')
   body
 
         section#home.home
@@ -35,11 +36,11 @@ html
                         li.text-capitalize.col-lg-12: a(href= link) #{item}
 
             .intro_bottom.col-lg-12
-                .button#coder.text-capitalize coder
-                .button#designer.text-capitalize designer
+                .bt#coder.text-capitalize coder
+                .bt#designer.text-capitalize designer
 
         section#development.closed_left
-            .container-fluid
+            .coder_gallery.container-fluid
                 .navlist.col-lg-2.col-lg-offset-10
                     ul.nav.nav-pills
                         li all
@@ -54,7 +55,9 @@ html
                                 .title_project.col-lg-12
                                     h4 Projet 1
                                 .details.col-lg-12
-                                    p {html} {css3} {js}
+                                    p.btn-tech html
+                                    p.btn-tech css3
+                                    p.btn-tech js
                         .box.box_small.col-lg-12
                             .box_img.box_img_small
                                 img(src='ressources/img/13.jpg')
@@ -62,7 +65,9 @@ html
                                 .title_project.col-lg-12
                                     h4 Projet 1
                                 .details.col-lg-12
-                                    p {html} {css3} {js}
+                                    p.btn-tech html
+                                    p.btn-tech css3
+                                    p.btn-tech js
 
                     .block.col-lg-3
                         .box.box_small.col-lg-12
@@ -72,7 +77,9 @@ html
                                 .title_project.col-lg-12
                                     h4 Projet 1
                                 .details.col-lg-12
-                                    p {html} {css3} {js}
+                                    p.btn-tech html
+                                    p.btn-tech css3
+                                    p.btn-tech js
                         .box.box_large.col-lg-12
                             .box_img.box_img_large
                                 img(src='ressources/img/13.jpg')
@@ -80,7 +87,9 @@ html
                                 .title_project.col-lg-12
                                     h4 Projet 1
                                 .details.col-lg-12
-                                    p {html} {css3} {js}
+                                    p.btn-tech html
+                                    p.btn-tech css3
+                                    p.btn-tech js
 
                     .block.col-lg-3
                         .box.box_large.col-lg-12
@@ -90,7 +99,9 @@ html
                                 .title_project.col-lg-12
                                     h4 Projet 1
                                 .details.col-lg-12
-                                    p {html} {css3} {js}
+                                    p.btn-tech html
+                                    p.btn-tech css3
+                                    p.btn-tech js
                         .box.box_small.col-lg-12
                             .box_img.box_img_small
                                 img(src='ressources/img/13.jpg')
@@ -98,7 +109,9 @@ html
                                 .title_project.col-lg-12
                                     h4 Projet 1
                                 .details.col-lg-12
-                                    p {html} {css3} {js}
+                                    p.btn-tech html
+                                    p.btn-tech css3
+                                    p.btn-tech js
 
                     .block.col-lg-3
                         .box.box_small.col-lg-12
@@ -108,7 +121,9 @@ html
                                 .title_project.col-lg-12
                                     h4 Projet 1
                                 .details.col-lg-12
-                                    p {html} {css3} {js}
+                                    p.btn-tech html
+                                    p.btn-tech css3
+                                    p.btn-tech js
                         .box.box_large.col-lg-12
                             .box_img.box_img_large
                                 img(src='ressources/img/13.jpg')
@@ -116,11 +131,15 @@ html
                                 .title_project.col-lg-12
                                     h4 Projet 1
                                 .details.col-lg-12
-                                    p {html} {css3} {js}
+                                    p.btn-tech html
+                                    p.btn-tech css3
+                                    p.btn-tech js
+                .close_gallery.col-lg-4.col-lg-offset-4.text-center
+                    p close
 
 
         section#design.closed_right
-            .container-fluid
+            .designer_gallery.container-fluid
                 .navlist_right.col-lg-2.col-lg-offset-10
                     ul.right.nav.nav-pills
                         li all
@@ -135,7 +154,9 @@ html
                                 .title_project.col-lg-12
                                     h4 Projet 1
                                 .details.col-lg-12
-                                    p {html} {css3} {js}
+                                    p.btn-tech html
+                                    p.btn-tech css3
+                                    p.btn-tech js
                         .box.box_small.col-lg-12
                             .box_img.box_img_small
                                 img(src='ressources/img/13.jpg')
@@ -143,7 +164,9 @@ html
                                 .title_project.col-lg-12
                                     h4 Projet 1
                                 .details.col-lg-12
-                                    p {html} {css3} {js}
+                                    p.btn-tech html
+                                    p.btn-tech css3
+                                    p.btn-tech js
 
                     .block.col-lg-3
                         .box.box_small.col-lg-12
@@ -153,7 +176,9 @@ html
                                 .title_project.col-lg-12
                                     h4 Projet 1
                                 .details.col-lg-12
-                                    p {html} {css3} {js}
+                                    p.btn-tech html
+                                    p.btn-tech css3
+                                    p.btn-tech js
                         .box.box_large.col-lg-12
                             .box_img.box_img_large
                                 img(src='ressources/img/13.jpg')
@@ -161,7 +186,9 @@ html
                                 .title_project.col-lg-12
                                     h4 Projet 1
                                 .details.col-lg-12
-                                    p {html} {css3} {js}
+                                    p.btn-tech html
+                                    p.btn-tech css3
+                                    p.btn-tech js
 
                     .block.col-lg-3
                         .box.box_large.col-lg-12
@@ -171,7 +198,9 @@ html
                                 .title_project.col-lg-12
                                     h4 Projet 1
                                 .details.col-lg-12
-                                    p {html} {css3} {js}
+                                    p.btn-tech html
+                                    p.btn-tech css3
+                                    p.btn-tech js
                         .box.box_small.col-lg-12
                             .box_img.box_img_small
                                 img(src='ressources/img/13.jpg')
@@ -179,7 +208,9 @@ html
                                 .title_project.col-lg-12
                                     h4 Projet 1
                                 .details.col-lg-12
-                                    p {html} {css3} {js}
+                                    p.btn-tech html
+                                    p.btn-tech css3
+                                    p.btn-tech js
 
                     .block.col-lg-3
                         .box.box_small.col-lg-12
@@ -189,7 +220,9 @@ html
                                 .title_project.col-lg-12
                                     h4 Projet 1
                                 .details.col-lg-12
-                                    p {html} {css3} {js}
+                                    p.btn-tech html
+                                    p.btn-tech css3
+                                    p.btn-tech js
                         .box.box_large.col-lg-12
                             .box_img.box_img_large
                                 img(src='ressources/img/13.jpg')
@@ -197,50 +230,114 @@ html
                                 .title_project.col-lg-12
                                     h4 Projet 1
                                 .details.col-lg-12
-                                    p {html} {css3} {js}
-        nav
+                                    p.btn-tech html
+                                    p.btn-tech css3
+                                    p.btn-tech js
+                .close_gallery.col-lg-4.col-lg-offset-4.text-center
+                    p close
         
-        section#about
-            .container-fluid
-                .row
-                    .about_me.col-lg-5.col-lg-offset-4
-                        h3 À propos
-                        article
-                            p Je m'appelle Eric Huguenin, je suis développeur front-end à Paris. J'aide les agences et les startups à concevoir et développer des expériences interactives.
-                            p Développeur front-end depuis 5ans, je n'ai pour but que de satisfaire mes clients en créant des sites interactifs dignes de ce nom. L'expérience utilisateur et la qualité sont les maîtres mots pour réaliser vos projets.
+        section#about.row
+            .f.col-lg-4.center_vertical
+                .intro.col-lg-12
+                    p.introduction “ Salut, je m'appel<span style="color:#109f9a;"> Ronald Marcel</span>, un <span style="color:#109f9a;">Designer Industriel</span>/<span style="color:#109f9a;">Developper Front-End</span>.”
+                    .block_text
+                        p.text Je m'appelle Eic Huguenin, je suis développeur front-end à Paris. J'aide les agences et les startups à concevoir et développer des expériences interactives. Développeur front-end depuis 5ans, je n'ai pour but que de satisfaire mes clients en créant des sites interactifs dignes de ce nom.
         section#skill
-        section#contact
             .container-fluid
-                #formcontact.row
-                    //il pour me contacter il peut entrer une address mail
-                      Sont nom et prénom
-                      remplir le champs de contact en commençant par:
-                      Un objet
-                      Le contenu de son message
-                    #box_contact.col-lg-12
+                .message_skill.col-lg-4.col-lg-offset-4
+                    p  “ J'ai compétence dans la conception et la création de projet Design Industriel, ainsi que le developpement et la maintenance de site Web. “
 
-                        form.col-lg-8(action="send/email.php" method="post")
-                            .title
-                                p(style="transform: matrix(1, 0, 0, 1, 0, 0);") Envoyer
-                            .form-group
-                                input.form_input(name="name" type="text" placeholder="Votre nom")
-                            .form-group
-                                input.form_input(name="email" type="email" placeholder="Votre adresse mail")
-                            .form-group
-                                input.form_input(name="objet" type="text" placeholder="Le sujet de votre message")
-                            .form-group
-                                textarea.form_input(name="content" rows="10" placeholder="Votre message")
-
-                        address.coordonnee.col-lg-4
-                            p.message Vous avez un projet, besoin d'un conseil ou tout simplement une question à me poser?
-                            p ronaldmarcel[at]ronaldmarcel.com
-
-                            button.bt request a quote
-                            
+                .box_progress.col-lg-4.col-lg-offset-4
+                    #progressbar.col-lg-12
+                        .skillbar.clearfix(data-percent='60%')
+                          .skillbar-title(style='background: #F5F5F5;')
+                            span HTML5
+                          .skillbar-bar(style='background: #ED5C65;')
+                          .skill-bar-percent 60%
+                    #progressbar.col-lg-12
+                        .skillbar.clearfix(data-percent='50%')
+                          .skillbar-title(style='background: #F5F5F5;')
+                            span CSS3
+                          .skillbar-bar(style='background: #ED5C65;')
+                          .skill-bar-percent 50%
+                    #progressbar.col-lg-12
+                        .skillbar.clearfix(data-percent='50%')
+                          .skillbar-title(style='background: #F5F5F5;')
+                            span JS
+                          .skillbar-bar(style='background: #ED5C65;')
+                          .skill-bar-percent 50%
+                    #progressbar.col-lg-12
+                        .skillbar.clearfix(data-percent='50%')
+                          .skillbar-title(style='background: #F5F5F5;')
+                            span Jquery
+                          .skillbar-bar(style='background: #ED5C65;')
+                          .skill-bar-percent 50%
+                    #progressbar.col-lg-12
+                        .skillbar.clearfix(data-percent='30%')
+                          .skillbar-title(style='background: #F5F5F5;')
+                            span ReactJs
+                          .skillbar-bar(style='background: #ED5C65;')
+                          .skill-bar-percent 30%
+                    #progressbar.col-lg-12
+                        .skillbar.clearfix(data-percent='70%')
+                          .skillbar-title(style='background: #F5F5F5;')
+                            span JadeJs/Pug
+                          .skillbar-bar(style='background: #ED5C65;')
+                          .skill-bar-percent 70%
+                    #progressbar.col-lg-12
+                        .skillbar.clearfix(data-percent='30%')
+                          .skillbar-title(style='background: #F5F5F5;')
+                            span PHP
+                          .skillbar-bar(style='background: #ED5C65;')
+                          .skill-bar-percent 30%
+        section#contact.row
+            .formcontact.col-lg-12
+                .box_contact.col-lg-4.col-lg-offset-4
+                    address.coordonnee.col-lg-12
+                            p.message Vous avez un projet, besoin d'un conseil ou tout simplement une question à me poser ?
+                            p ronaldmarcel[<span style ="color:#109f9a">at</span>]ronaldmarcel.com
+                            button.bt Une requête ?
+                    form.form.col-lg-12(action="send/email.php" method="post")
+                        .title
+                            p.send Envoyer
+                        .form-group
+                            input.form_input(name="name" type="text" placeholder="Votre nom")
+                        .form-group
+                            input.form_input(name="email" type="email" placeholder="Votre adresse mail")
+                        .form-group
+                            input.form_input(name="objet" type="text" placeholder="Le sujet de votre message")
+                        .form-group
+                            textarea.form_input(name="content" rows="5" placeholder="Votre message")
+            .footer.col-lg-12
+                .container-fluid
+                        .block_footer
+                            ul.col-lg-12
+                                li Suivez moi sur
+                                li
+                                    a(href="#")
+                                        span.title_so.icon.ion-social-github
+                                            span Github
+                                li
+                                    a(href="#")
+                                        span.title_so.icon.ion-social-twitter
+                                            span Twitter
+                                li
+                                    a(href="#")
+                                        span.title_so.icon.ion-social-linkedin
+                                            span Linkedin
+                                li
+                                    a(href="#")
+                                        span.title_so.icon.ion-social-googleplus
+                                            span Google Plus
+                                li.bt_title envoyer moi un email sur
+                                li ronaldmarcel[@]ronaldmarcel.com
         script.
             $(document).ready(function(){
                 $.scrollify({
-                        section : "#home",
-                        section : "#about",
+                        section : "section",
+                });
+                $("button").click(function(){
+                    $(".box_contact").find("form").fadeIn(1000),
+                    $(".box_contact").find("address").fadeOut(100);
                     });
             });
