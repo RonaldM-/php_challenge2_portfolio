@@ -5,19 +5,21 @@
 html, body {
     height:100%;
 }
+
 /**
     col-lg-4-5
 */
+
 .col-lg-offset-4-5 {
     margin-left: 37.49667%;
 }
-#home.container-fluid{
+/* #home.container-fluid{
     padding-right: 0px;
     padding-left: 0px;
-}
+} */
 h1{
     margin-top: 20%;
-/*    font-family: 'Shadows Into Light Two', cursive!important;*/
+    font-family: 'Shadows Into Light Two', cursive!important;
     font-family: 'Montserrat', sans-serif;
     font-size: 41px !important;
     text-transform: uppercase;
@@ -36,6 +38,7 @@ ul li{
 }
 a{
     font-family:'Dosis', sans-serif;
+    color: black;
     font-size: 20px;
     color: #000;
 }
@@ -46,6 +49,11 @@ a:focus{
     font-family:'Dosis', sans-serif;
     font-size: 20px;
     text-decoration: none!important;
+}
+.menu a{
+    font-family:'Dosis', sans-serif;
+    font-size: 20px;
+    color: #000;
 }
 .menu li a:hover:before{
     content: '[ ';
@@ -66,36 +74,54 @@ p.intro{
     margin-bottom: 30px;
 }
 .social{
-    margin-bottom: 35px;
+  height: 29px;
 }
-.social.icon.ion-social-linked{
-  font-size: 20px;
-  transform: translateZ(0);
-  webkit-transform: translateZ(0);
+.icon:before{
+  cursor: pointer;
+
+  color: #555;
+  font-size: 25px;
+  transform: translateY(0);
+  webkit-transform: translateY(0);
+  transition-timing-function: ease-out;
 }
-.social li .ion-social-linked:hover{
-  animation-name: ion-social-linked;
+
+.icon:hover:before{
+  -webkit-animation-name: ion-social-linkedin;
+  animation-name: ion-social-linkedin;
+  -webkit-animation-duration: 0.9s;
+  animation-duration: 0.9s;
+  /*-webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;*/
+  /*animation-name: ion-social-linkedin;
   webkit-animation-name: ion-social-linked;
   font-size: 25px;
+  color: rgb(16, 159, 154);
   animation-duration: 0.75s;
-  webkit-animation-duration: 0.75s;
+  webkit-animation-duration: 0.75s;*/
 }
-.menu a{
-    font-family:'Dosis', sans-serif;
-    font-size: 20px;
-    color: #000;
+@keyframes ion-social-linkedin {
+  0%{ transform: translateY(0);}
+  25%{ transform: translateY(-6px);}
+  50%{ transform: translateY(0);}
+  75%{ transform: translateY(-6px);}
+  100%{ transform: translateY(0);}
 }
 #home{
     height: 100%;
 }
 .intro_me{
-    height: 82%;
-    width: 21%;
-    min-width: 382.5px;
+/*     height: 82%; */
+/*     width: 21%;
+min-width: 382.5px; */
     margin: 0 auto;
 }
 .intro_bottom{
-    background: #FEEECC;
+    /*background: #FEEECC;*/
     height: 18%;
 }
 
@@ -143,30 +169,27 @@ EFFECT
 .closed_right,.closed_left{
     width: 0%;
 }
-.home{
+/* .home{
 float: right;
-}
-.home_small{
+} */
+/* .home_small{
     float:right;
     width: 25%;
     padding: 0;
     margin: 0;
-}
-.home_small_left{
+} */
+/* .home_small_left{
     float: left;
     width: 25%;
     padding: 0;
     margin: 0;
-}
+} */
 #development{
-    overflow: hidden;
-    float: left;
+
     padding:0;
     margin: 0;
 }
 #design{
-    overflow: hidden;
-    float:right;
     padding: 0;
     margin:0;
 }
@@ -278,9 +301,9 @@ img{
 /* Section Contact */
 
 #contact{
-    position: relative;
-    clear: both;
-    height: 98%;
+/*     position: relative;
+clear: both; */
+/*     height: 98%; */
     width: 100%;
 }
 
@@ -332,8 +355,8 @@ textarea{
     resize:none;
 }
 .box_contact{
-    position: absolute;
-    top: 15%;
+    /* position: absolute; */
+    top: 30%;
 }
 /* Section Skill*/
 #skill{
@@ -355,7 +378,7 @@ textarea{
     font-size: 21px;
     font-family: 'Lato', sans-serif;
     font-style: normal;
-    clear: both;
+/*     clear: both; */
     height: 100%;
     width: 100%;
 }
@@ -370,14 +393,8 @@ textarea{
     border-radius: 3px;
     box-sizing: border-box;
 }
-
-.f{
-    float: right!important;
-    right:15%;
-}
-
-.intro{
-
+.box_intro{
+    top: 30%;
     text-align: right;
     color: #444;
 }
@@ -405,19 +422,18 @@ textarea{
     padding:20px;
     border-radius: 10px;
 }
-.footer{
-    position: absolute!important;
-    bottom: 0px;
-    right: 0;
-    left: 0;
-    height: 50px;
+footer{
+    /* position: absolute; */
+    /* bottom: 0px; */
+  /*  right: 0;
+    left: 0;*/
+    height: auto;
     background: #efefef;
     text-align: center;
     margin-top: 20px;
-
     line-height: 50px;
 }
-.footer li{
+footer li{
     color:  #555;
     display: inline-block;
     font-size: 16px;
@@ -534,4 +550,8 @@ width:110px;
 .close_gallery p:hover{
     color: #6adcfa;
     cursor: pointer;
+}
+
+footer{
+    font-family:'Dosis', sans-serif;
 }

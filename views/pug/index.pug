@@ -4,141 +4,57 @@ html
     meta(author='Ronald Marcel' )
     meta(language='Fr' )
     title Portfolio
-    link(href='build/css/style.css', rel='stylesheet', type='text/css')
     link(href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
     link(href='build/css/ionicons.min.css', rel='stylesheet', type='text/css')
-    link(href='build/css/jquery.fullPage.css')
+    link(href='build/onepage-scroll/onepage-scroll.css')
+    link(href='build/css/style.css', rel='stylesheet', type='text/css')
     script(src='build/js/jquery-2.2.4.js')
     script(src='https://code.jquery.com/ui/1.12.0/jquery-ui.js')
     script(src='build/js/script.js')
-    script(src='build/scrollify-master/jquery.scrollify.min.js')
+    script(src='build/onepage-scroll/jquery.onepage-scroll.min.js')
     script(src='node_modules/progressbar.js/progressbar.min.js')
   body
+<!--     .wappers.row -->
 
-        section#home.home
-            .intro_me
-                h1.col-lg-12.text-center Ronald</br>Marcel
-                h3.col-lg-12.text-center Product Designer </br> Developper Front-End
-                p.intro.col-lg-12.text-center Hello! My name is Pierre Nel, and I'm a London-based freelancer. If I'm not freelancing at some of London's finest digital agencies, I'm working remotely on projects for clients all over the world.<br>I have a diverse set of skills, ranging from design, to HTML + CSS + Javascript, all the way to PHP, custom Drupal module development and Linux server administration.
-                ul.social.col-lg-12
-                    li.col-lg-2.col-lg-offset-2.text-center
+        header.container-fluid
+          nav.navbar.navbar-default.navbar-fixed-top
+            .container-fluid
+              ul.nav.navbar-nav
+                  -var list = {"home":"#home", "about me":"#about", "skill":"#skill", "contact":"#contact"}
+                  each link, item in list
+                      li.text-capitalize: a(href= link) #{item}
+
+        section#home.container-fluid
+          .row
+            .intro_me.col-xs-12
+                h1.col-lg-12.text-center.col-xs-12 Ronald</br>Marcel
+                h3.col-lg-12.text-center.col-xs-12 Product Designer </br> Developper Front-End
+                p.intro.col-lg-12.text-center.col-xs-12 Hello! My name is Pierre Nel, and I'm a London-based freelancer. If I'm not freelancing at some of London's finest digital agencies, I'm working remotely on projects for clients all over the world.<br>I have a diverse set of skills, ranging from design, to HTML + CSS + Javascript, all the way to PHP, custom Drupal module development and Linux server administration.
+                ul.social.col-lg-12.col-xs-12
+                    li.col-lg-2.col-lg-offset-2.col-xs-3
                         a.icon.ion-social-github(href="#")
-                    li.col-lg-2
+                    li.col-lg-2.col-xs-3
                         a.icon.ion-social-twitter(href="#")
-                    li.col-lg-2
+                    li.col-lg-2.col-xs-3
                         a.icon.ion-social-linkedin(href="#")
-                    li.col-lg-2
+                    li.col-lg-2.col-xs-3
                         a.icon.ion-social-googleplus(href="#")
 
                 ul.menu.col-lg-12.text-center
                     -var list = {"home":"#home", "about me":"#about", "skill":"#skill", "contact":"#contact"}
                     each link, item in list
-                        li.text-capitalize.col-lg-12: a(href= link) #{item}
+                        li.text-capitalize.col-lg-12.col-xs-12: a(href= link) #{item}
 
-            .intro_bottom.col-lg-12
+            .intro_bottom.col-lg-12.col-xs-12
                 .bt#coder.text-capitalize coder
                 .bt#designer.text-capitalize designer
 
-        section#development.closed_left
-            .coder_gallery.container-fluid
-                .navlist.col-lg-2.col-lg-offset-10
-                    ul.nav.nav-pills
-                        li all
-                        li website
-                        li app
-                .gallery.col-lg-10.col-lg-offset-1
-                    .block.col-lg-3
-                        .box.box_large.col-lg-12
-                            .box_img.box_img_large
-                                img(src='ressources/img/13.jpg')
-                            .desc
-                                .title_project.col-lg-12
-                                    h4 Projet 1
-                                .details.col-lg-12
-                                    p.btn-tech html
-                                    p.btn-tech css3
-                                    p.btn-tech js
-                        .box.box_small.col-lg-12
-                            .box_img.box_img_small
-                                img(src='ressources/img/13.jpg')
-                            .desc
-                                .title_project.col-lg-12
-                                    h4 Projet 1
-                                .details.col-lg-12
-                                    p.btn-tech html
-                                    p.btn-tech css3
-                                    p.btn-tech js
-
-                    .block.col-lg-3
-                        .box.box_small.col-lg-12
-                            .box_img.box_img_small
-                                img(src='ressources/img/13.jpg')
-                            .desc
-                                .title_project.col-lg-12
-                                    h4 Projet 1
-                                .details.col-lg-12
-                                    p.btn-tech html
-                                    p.btn-tech css3
-                                    p.btn-tech js
-                        .box.box_large.col-lg-12
-                            .box_img.box_img_large
-                                img(src='ressources/img/13.jpg')
-                            .desc
-                                .title_project.col-lg-12
-                                    h4 Projet 1
-                                .details.col-lg-12
-                                    p.btn-tech html
-                                    p.btn-tech css3
-                                    p.btn-tech js
-
-                    .block.col-lg-3
-                        .box.box_large.col-lg-12
-                            .box_img.box_img_large
-                                img(src='ressources/img/13.jpg')
-                            .desc
-                                .title_project.col-lg-12
-                                    h4 Projet 1
-                                .details.col-lg-12
-                                    p.btn-tech html
-                                    p.btn-tech css3
-                                    p.btn-tech js
-                        .box.box_small.col-lg-12
-                            .box_img.box_img_small
-                                img(src='ressources/img/13.jpg')
-                            .desc
-                                .title_project.col-lg-12
-                                    h4 Projet 1
-                                .details.col-lg-12
-                                    p.btn-tech html
-                                    p.btn-tech css3
-                                    p.btn-tech js
-
-                    .block.col-lg-3
-                        .box.box_small.col-lg-12
-                            .box_img.box_img_small
-                                img(src='ressources/img/13.jpg')
-                            .desc
-                                .title_project.col-lg-12
-                                    h4 Projet 1
-                                .details.col-lg-12
-                                    p.btn-tech html
-                                    p.btn-tech css3
-                                    p.btn-tech js
-                        .box.box_large.col-lg-12
-                            .box_img.box_img_large
-                                img(src='ressources/img/13.jpg')
-                            .desc
-                                .title_project.col-lg-12
-                                    h4 Projet 1
-                                .details.col-lg-12
-                                    p.btn-tech html
-                                    p.btn-tech css3
-                                    p.btn-tech js
-                .close_gallery.col-lg-4.col-lg-offset-4.text-center
-                    p close
+        section#development.container-fluid
+          .row
 
 
-        section#design.closed_right
+        section#design.container-fluid
+          .row
             .designer_gallery.container-fluid
                 .navlist_right.col-lg-2.col-lg-offset-10
                     ul.right.nav.nav-pills
@@ -235,15 +151,16 @@ html
                                     p.btn-tech js
                 .close_gallery.col-lg-4.col-lg-offset-4.text-center
                     p close
-        
-        section#about.row
-            .f.col-lg-4.center_vertical
-                .intro.col-lg-12
+
+        section#about.container-fluid
+          .row
+            .box_intro.col-lg-4
+                .col-lg-12
                     p.introduction “ Salut, je m'appel<span style="color:#109f9a;"> Ronald Marcel</span>, un <span style="color:#109f9a;">Designer Industriel</span>/<span style="color:#109f9a;">Developper Front-End</span>.”
                     .block_text
                         p.text Je m'appelle Eic Huguenin, je suis développeur front-end à Paris. J'aide les agences et les startups à concevoir et développer des expériences interactives. Développeur front-end depuis 5ans, je n'ai pour but que de satisfaire mes clients en créant des sites interactifs dignes de ce nom.
-        section#skill
-            .container-fluid
+        section#skill.container-fluid
+            .row
                 .message_skill.col-lg-4.col-lg-offset-4
                     p  “ J'ai compétence dans la conception et la création de projet Design Industriel, ainsi que le developpement et la maintenance de site Web. “
 
@@ -290,14 +207,15 @@ html
                             span PHP
                           .skillbar-bar(style='background: #ED5C65;')
                           .skill-bar-percent 30%
-        section#contact.row
-            .formcontact.col-lg-12
-                .box_contact.col-lg-4.col-lg-offset-4
-                    address.coordonnee.col-lg-12
+        section#contact.container-fluid
+          .row
+            .formcontact.col-lg-12.col-xs-12
+                .box_contact.col-lg-4.col-lg-offset-4.col-xs-12
+                    address.coordonnee.col-lg-12.col-xs-12
                             p.message Vous avez un projet, besoin d'un conseil ou tout simplement une question à me poser ?
                             p ronaldmarcel[<span style ="color:#109f9a">at</span>]ronaldmarcel.com
                             button.bt Une requête ?
-                    form.form.col-lg-12(action="send/email.php" method="post")
+                    form.form.col-lg-12.col-xs-12(action="send/email.php" method="post")
                         .title
                             p.send Envoyer
                         .form-group
@@ -308,30 +226,30 @@ html
                             input.form_input(name="objet" type="text" placeholder="Le sujet de votre message")
                         .form-group
                             textarea.form_input(name="content" rows="5" placeholder="Votre message")
-            .footer.col-lg-12
-                .container-fluid
-                        .block_footer
-                            ul.col-lg-12
-                                li Suivez moi sur
-                                li
-                                    a(href="#")
-                                        span.title_so.icon.ion-social-github
-                                            span Github
-                                li
-                                    a(href="#")
-                                        span.title_so.icon.ion-social-twitter
-                                            span Twitter
-                                li
-                                    a(href="#")
-                                        span.title_so.icon.ion-social-linkedin
-                                            span Linkedin
-                                li
-                                    a(href="#")
-                                        span.title_so.icon.ion-social-googleplus
-                                            span Google Plus
-                                li.bt_title envoyer moi un email sur
-                                li ronaldmarcel[@]ronaldmarcel.com
-        script.
+        footer.container-fluid
+            .row
+                    .block_footer
+                        ul.col-lg-12.col-xs-12
+                            li Suivez moi sur
+                            li
+                                a(href="#")
+                                    span.title_so.icon.ion-social-github
+                                        span Github
+                            li
+                                a(href="#")
+                                    span.title_so.icon.ion-social-twitter
+                                        span Twitter
+                            li
+                                a(href="#")
+                                    span.title_so.icon.ion-social-linkedin
+                                        span Linkedin
+                            li
+                                a(href="#")
+                                    span.title_so.icon.ion-social-googleplus
+                                        span Google Plus
+                            li.bt_title envoyer moi un email sur
+                            li ronaldmarcel[@]ronaldmarcel.com
+        //script.
             $(document).ready(function(){
                 $.scrollify({
                         section : "section",
