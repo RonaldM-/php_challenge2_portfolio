@@ -7,309 +7,53 @@
     <title>Portfolio</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
     <link href="build/css/ionicons.min.css" rel="stylesheet" type="text/css"/>
-    <link href="build/onepage-scroll/onepage-scroll.css"/>
+    <!--link(href='build/onepage-scroll/onepage-scroll.css')-->
     <link href="build/css/style.css" rel="stylesheet" type="text/css"/>
-    <script src="build/js/jquery-2.2.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-    <script src="build/js/script.js"></script>
-    <script src="build/onepage-scroll/jquery.onepage-scroll.min.js"></script>
-    <script src="node_modules/progressbar.js/progressbar.min.js"></script>
+    <!--script(src='build/js/jquery-2.2.4.js')-->
+    <!--script(src='https://code.jquery.com/ui/1.12.0/jquery-ui.js')-->
+    <!--script(src='build/js/script.js')-->
+    <!--script(src='build/js/callinjson.js')-->
+    <!--script(src='build/onepage-scroll/jquery.onepage-scroll.min.js')-->
+    <!--script(src='node_modules/progressbar.js/progressbar.min.js')-->
   </head>
   <body></body>
 </html><!--     .wappers.row -->
 <header class="container-fluid">
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <ul class="nav navbar-nav">
-        <li class="text-capitalize"><a href="#home">home</a></li>
-        <li class="text-capitalize"><a href="#about">about me</a></li>
-        <li class="text-capitalize"><a href="#skill">skill</a></li>
-        <li class="text-capitalize"><a href="#contact">contact</a></li>
-      </ul>
-    </div>
-  </nav>
+  <!--nav.navbar.navbar-default.navbar-fixed-top
+  .container-fluid
+    ul.nav.navbar-nav
+        -var list = {"home":"#home", "about me":"#about", "skill":"#skill", "contact":"#contact"}
+        each link, item in list
+            li.text-capitalize: a(href= link) 
+  
+  -->
 </header>
 <section class="container-fluid" id="home">
   <div class="row">
-    <div class="intro_me col-xs-12">
-      <h1 class="col-lg-12 text-center col-xs-12">Ronald</br>Marcel</h1>
-      <h3 class="col-lg-12 text-center col-xs-12">Product Designer </br> Developper Front-End</h3>
-      <p class="intro col-lg-12 text-center col-xs-12">Hello! My name is Pierre Nel, and I'm a London-based freelancer. If I'm not freelancing at some of London's finest digital agencies, I'm working remotely on projects for clients all over the world.<br>I have a diverse set of skills, ranging from design, to HTML + CSS + Javascript, all the way to PHP, custom Drupal module development and Linux server administration.</p>
-      <ul class="social col-lg-12 col-xs-12">
-        <li class="col-lg-2 col-lg-offset-2 col-xs-3"><a class="icon ion-social-github" href="#"></a></li>
-        <li class="col-lg-2 col-xs-3"><a class="icon ion-social-twitter" href="#"></a></li>
-        <li class="col-lg-2 col-xs-3"><a class="icon ion-social-linkedin" href="#"></a></li>
-        <li class="col-lg-2 col-xs-3"><a class="icon ion-social-googleplus" href="#"></a></li>
-      </ul>
-      <ul class="menu col-lg-12 text-center">
-        <li class="text-capitalize col-lg-12 col-xs-12"><a href="#home">home</a></li>
-        <li class="text-capitalize col-lg-12 col-xs-12"><a href="#about">about me</a></li>
-        <li class="text-capitalize col-lg-12 col-xs-12"><a href="#skill">skill</a></li>
-        <li class="text-capitalize col-lg-12 col-xs-12"><a href="#contact">contact</a></li>
-      </ul>
-    </div>
-    <div class="intro_bottom col-lg-12 col-xs-12">
-      <div class="bt text-capitalize" id="coder">coder</div>
-      <div class="bt text-capitalize" id="designer">designer</div>
-    </div>
-  </div>
-</section>
-<section class="container-fluid" id="development">
-  <div class="row"></div>
-</section>
-<section class="container-fluid" id="design">
-  <div class="row">
-    <div class="designer_gallery container-fluid">
-      <div class="navlist_right col-lg-2 col-lg-offset-10">
-        <ul class="right nav nav-pills">
-          <li>all</li>
-          <li>website</li>
-          <li>app</li>
-        </ul>
-      </div>
-      <div class="gallery col-lg-10 col-lg-offset-1">
-        <div class="block col-lg-3">
-          <div class="box box_large col-lg-12">
-            <div class="box_img box_img_large"><img src="ressources/img/13.jpg"/></div>
-            <div class="desc">
-              <div class="title_project col-lg-12">
-                <h4>Projet 1</h4>
-              </div>
-              <div class="details col-lg-12">
-                <p class="btn-tech">html</p>
-                <p class="btn-tech">css3</p>
-                <p class="btn-tech">js</p>
-              </div>
-            </div>
-          </div>
-          <div class="box box_small col-lg-12">
-            <div class="box_img box_img_small"><img src="ressources/img/13.jpg"/></div>
-            <div class="desc">
-              <div class="title_project col-lg-12">
-                <h4>Projet 1</h4>
-              </div>
-              <div class="details col-lg-12">
-                <p class="btn-tech">html</p>
-                <p class="btn-tech">css3</p>
-                <p class="btn-tech">js</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="block col-lg-3">
-          <div class="box box_small col-lg-12">
-            <div class="box_img box_img_small"><img src="ressources/img/13.jpg"/></div>
-            <div class="desc">
-              <div class="title_project col-lg-12">
-                <h4>Projet 1</h4>
-              </div>
-              <div class="details col-lg-12">
-                <p class="btn-tech">html</p>
-                <p class="btn-tech">css3</p>
-                <p class="btn-tech">js</p>
-              </div>
-            </div>
-          </div>
-          <div class="box box_large col-lg-12">
-            <div class="box_img box_img_large"><img src="ressources/img/13.jpg"/></div>
-            <div class="desc">
-              <div class="title_project col-lg-12">
-                <h4>Projet 1</h4>
-              </div>
-              <div class="details col-lg-12">
-                <p class="btn-tech">html</p>
-                <p class="btn-tech">css3</p>
-                <p class="btn-tech">js</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="block col-lg-3">
-          <div class="box box_large col-lg-12">
-            <div class="box_img box_img_large"><img src="ressources/img/13.jpg"/></div>
-            <div class="desc">
-              <div class="title_project col-lg-12">
-                <h4>Projet 1</h4>
-              </div>
-              <div class="details col-lg-12">
-                <p class="btn-tech">html</p>
-                <p class="btn-tech">css3</p>
-                <p class="btn-tech">js</p>
-              </div>
-            </div>
-          </div>
-          <div class="box box_small col-lg-12">
-            <div class="box_img box_img_small"><img src="ressources/img/13.jpg"/></div>
-            <div class="desc">
-              <div class="title_project col-lg-12">
-                <h4>Projet 1</h4>
-              </div>
-              <div class="details col-lg-12">
-                <p class="btn-tech">html</p>
-                <p class="btn-tech">css3</p>
-                <p class="btn-tech">js</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="block col-lg-3">
-          <div class="box box_small col-lg-12">
-            <div class="box_img box_img_small"><img src="ressources/img/13.jpg"/></div>
-            <div class="desc">
-              <div class="title_project col-lg-12">
-                <h4>Projet 1</h4>
-              </div>
-              <div class="details col-lg-12">
-                <p class="btn-tech">html</p>
-                <p class="btn-tech">css3</p>
-                <p class="btn-tech">js</p>
-              </div>
-            </div>
-          </div>
-          <div class="box box_large col-lg-12">
-            <div class="box_img box_img_large"><img src="ressources/img/13.jpg"/></div>
-            <div class="desc">
-              <div class="title_project col-lg-12">
-                <h4>Projet 1</h4>
-              </div>
-              <div class="details col-lg-12">
-                <p class="btn-tech">html</p>
-                <p class="btn-tech">css3</p>
-                <p class="btn-tech">js</p>
-              </div>
-            </div>
-          </div>
+    <div class="profil col-xs-12">
+      <div class="round_outter">
+        <div class="round_inner">
+          <div class="portrait"></div>
         </div>
       </div>
-      <div class="close_gallery col-lg-4 col-lg-offset-4 text-center">
-        <p>close</p>
-      </div>
+      <div class="aboutme"><span class="whoiam col-lg-12 text-center col-xs-12">Ronald Marcel</span><span class="role col-lg-12 text-center col-xs-12">Front End Developer and Product Designer junior based in Brittany.</span></div>
+      <!--p.intro.col-lg-12.text-center.col-xs-12 Hello! My name is Pierre Nel, and I'm a London-based freelancer. If I'm not freelancing at some of London's finest digital agencies, I'm working remotely on projects for clients all over the world.<br>I have a diverse set of skills, ranging from design, to HTML + CSS + Javascript, all the way to PHP, custom Drupal module development and Linux server administration.-->
+      <!--ul.social.col-lg-12.col-xs-12
+      li.col-lg-2.col-lg-offset-2.col-xs-3
+          a.icon.ion-social-github(href="#")
+      li.col-lg-2.col-xs-3
+          a.icon.ion-social-twitter(href="#")
+      li.col-lg-2.col-xs-3
+          a.icon.ion-social-linkedin(href="#")
+      li.col-lg-2.col-xs-3
+          a.icon.ion-social-googleplus(href="#")
+      
+      -->
+      <!--ul.menu.col-lg-12.text-center
+      -var list = {"home":"#home", "about me":"#about", "skill":"#skill", "contact":"#contact"}
+      each link, item in list
+          li.text-capitalize.col-lg-12.col-xs-12: a(href= link) 
+      -->
     </div>
   </div>
 </section>
-<section class="container-fluid" id="about">
-  <div class="row">
-    <div class="box_intro col-lg-4">
-      <div class="col-lg-12">
-        <p class="introduction">“ Salut, je m'appel<span style="color:#109f9a;"> Ronald Marcel</span>, un <span style="color:#109f9a;">Designer Industriel</span>/<span style="color:#109f9a;">Developper Front-End</span>.”</p>
-        <div class="block_text">
-          <p class="text">Je m'appelle Eic Huguenin, je suis développeur front-end à Paris. J'aide les agences et les startups à concevoir et développer des expériences interactives. Développeur front-end depuis 5ans, je n'ai pour but que de satisfaire mes clients en créant des sites interactifs dignes de ce nom.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="container-fluid" id="skill">
-  <div class="row">
-    <div class="message_skill col-lg-4 col-lg-offset-4">
-      <p> “ J'ai compétence dans la conception et la création de projet Design Industriel, ainsi que le developpement et la maintenance de site Web. “</p>
-    </div>
-    <div class="box_progress col-lg-4 col-lg-offset-4">
-      <div class="col-lg-12" id="progressbar">
-        <div class="skillbar clearfix" data-percent="60%">
-          <div class="skillbar-title" style="background: #F5F5F5"><span>HTML5</span></div>
-          <div class="skillbar-bar" style="background: #ED5C65"></div>
-          <div class="skill-bar-percent">60%</div>
-        </div>
-      </div>
-      <div class="col-lg-12" id="progressbar">
-        <div class="skillbar clearfix" data-percent="50%">
-          <div class="skillbar-title" style="background: #F5F5F5"><span>CSS3</span></div>
-          <div class="skillbar-bar" style="background: #ED5C65"></div>
-          <div class="skill-bar-percent">50%</div>
-        </div>
-      </div>
-      <div class="col-lg-12" id="progressbar">
-        <div class="skillbar clearfix" data-percent="50%">
-          <div class="skillbar-title" style="background: #F5F5F5"><span>JS</span></div>
-          <div class="skillbar-bar" style="background: #ED5C65"></div>
-          <div class="skill-bar-percent">50%</div>
-        </div>
-      </div>
-      <div class="col-lg-12" id="progressbar">
-        <div class="skillbar clearfix" data-percent="50%">
-          <div class="skillbar-title" style="background: #F5F5F5"><span>Jquery</span></div>
-          <div class="skillbar-bar" style="background: #ED5C65"></div>
-          <div class="skill-bar-percent">50%</div>
-        </div>
-      </div>
-      <div class="col-lg-12" id="progressbar">
-        <div class="skillbar clearfix" data-percent="30%">
-          <div class="skillbar-title" style="background: #F5F5F5"><span>ReactJs</span></div>
-          <div class="skillbar-bar" style="background: #ED5C65"></div>
-          <div class="skill-bar-percent">30%</div>
-        </div>
-      </div>
-      <div class="col-lg-12" id="progressbar">
-        <div class="skillbar clearfix" data-percent="70%">
-          <div class="skillbar-title" style="background: #F5F5F5"><span>JadeJs/Pug</span></div>
-          <div class="skillbar-bar" style="background: #ED5C65"></div>
-          <div class="skill-bar-percent">70%</div>
-        </div>
-      </div>
-      <div class="col-lg-12" id="progressbar">
-        <div class="skillbar clearfix" data-percent="30%">
-          <div class="skillbar-title" style="background: #F5F5F5"><span>PHP</span></div>
-          <div class="skillbar-bar" style="background: #ED5C65"></div>
-          <div class="skill-bar-percent">30%</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="container-fluid" id="contact">
-  <div class="row">
-    <div class="formcontact col-lg-12 col-xs-12">
-      <div class="box_contact col-lg-4 col-lg-offset-4 col-xs-12">
-        <address class="coordonnee col-lg-12 col-xs-12">
-          <p class="message">Vous avez un projet, besoin d'un conseil ou tout simplement une question à me poser ?</p>
-          <p>ronaldmarcel[<span style ="color:#109f9a">at</span>]ronaldmarcel.com</p>
-          <button class="bt">Une requête ?</button>
-        </address>
-        <form class="form col-lg-12 col-xs-12" action="send/email.php" method="post">
-          <div class="title">
-            <p class="send">Envoyer</p>
-          </div>
-          <div class="form-group">
-            <input class="form_input" name="name" type="text" placeholder="Votre nom"/>
-          </div>
-          <div class="form-group">
-            <input class="form_input" name="email" type="email" placeholder="Votre adresse mail"/>
-          </div>
-          <div class="form-group">
-            <input class="form_input" name="objet" type="text" placeholder="Le sujet de votre message"/>
-          </div>
-          <div class="form-group">
-            <textarea class="form_input" name="content" rows="5" placeholder="Votre message"></textarea>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-<footer class="container-fluid">
-  <div class="row">
-    <div class="block_footer">
-      <ul class="col-lg-12 col-xs-12">
-        <li>Suivez moi sur</li>
-        <li><a href="#"><span class="title_so icon ion-social-github"><span>Github</span></span></a></li>
-        <li><a href="#"><span class="title_so icon ion-social-twitter"><span>Twitter</span></span></a></li>
-        <li><a href="#"><span class="title_so icon ion-social-linkedin"><span>Linkedin</span></span></a></li>
-        <li><a href="#"><span class="title_so icon ion-social-googleplus"><span>Google Plus</span></span></a></li>
-        <li class="bt_title">envoyer moi un email sur</li>
-        <li>ronaldmarcel[@]ronaldmarcel.com</li>
-      </ul>
-    </div>
-  </div>
-</footer>
-<!--script.
-$(document).ready(function(){
-    $.scrollify({
-            section : "section",
-    });
-    $("button").click(function(){
-        $(".box_contact").find("form").fadeIn(1000),
-        $(".box_contact").find("address").fadeOut(100);
-        });
-});
--->
