@@ -1,0 +1,75 @@
+html
+  head
+    meta(charset='utf-8')
+    meta(author='Ronald Marcel')
+    meta(language='FR')
+    link(href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
+  body
+      style.
+        .item{
+          height:400px;
+          background-color: yellow;
+        }
+        .mouses{
+          display: block;
+          border-radius:9px;
+          height: 46px;
+          width: 28px;
+          border: solid black 3px;
+        }
+        .point{
+          display: block;
+          border-radius:5px;
+          margin-top: 6px;
+          margin-left: auto;
+          margin-right: auto;
+          opacity: 0;
+          height: 6px;
+          width: 6px;
+          background-color: black;
+          animation-duration: 1s;
+          animation-iteration-count: infinite;
+        }
+        .point:first-child{
+          animation-name: act;
+        }
+        .point:nth-child(0n+2){
+          animation-name: act1;
+        }
+        .point:nth-child(0n+3){
+          animation-name: act2;
+        }
+
+        @keyframes act{
+          0%, 20%  { opacity: 1;}
+          20.1%,100%{ opacity: 0;}
+        }
+        @keyframes act1{
+          0%, 40% { opacity: 1;}
+          40.1%, 100%{opacity: 0;}
+        }
+        @keyframes act2{
+          0%, 60% { opacity: 1;}
+          60.1%, 100%{opacity: 0;}
+        }
+
+      section.container-fluid
+        .gallery_items.col-md-12
+          .gallery_title.col-md-1
+            p Noeud Papillon
+          .gallery_img.col-md-10
+            .box_item.col-md-3
+              .item.container-fluid
+                img.img-responsive
+            .box_item.col-md-3
+              .item.container-fluid
+                img.img-responsive
+            .box_item.col-md-3
+              .item.container-fluid
+                img.img-responsive
+        section.test.container-fluid
+          .scroolmouse.col-md-12
+           .mouses
+             span.point
+             span.point
+             span.point

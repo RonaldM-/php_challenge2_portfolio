@@ -24,5 +24,12 @@
   },
   "dependencies": {
     "pug": "^2.0.0-beta6"
+  },
+  "providedServices": {
+  "linter": {
+    "versions": {
+      "1.0.0": "provideLinter"
+    }
   }
+}
 }
