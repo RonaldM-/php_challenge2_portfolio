@@ -4,7 +4,7 @@ html
     meta(author='Ronald Marcel' )
     meta(language='Fr' )
     title Portfolio
-    link(href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
+    //link(href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
     link(href='build/css/ionicons.min.css', rel='stylesheet', type='text/css')
     //link(href='build/onepage-scroll/onepage-scroll.css')
     link(href='build/css/style.css', rel='stylesheet', type='text/css')
@@ -21,32 +21,40 @@ html
           //nav.navbar.navbar-default.navbar-fixed-top
             .container-fluid
               ul.nav.navbar-nav
-                  -var list = {"home":"#home", "about me":"#about", "skill":"#skill", "contact":"#contact"}
+                  -var list = {"home":"#home", "aboutme":"#aboutme", "skill":"#skill", "contact":"#contact"}
                   each link, item in list
                       li.text-capitalize: a(href= link) #{item}
 
         section#home.container-fluid
           .row
-            .profil.col-xs-12
+            .profil
                 .round_outter
                   .round_inner
                     .portrait
                 .aboutme
-                  span.whoiam.col-lg-12.text-center.col-xs-12 Ronald Marcel
-                  span.role.col-lg-12.text-center.col-xs-12 Front End Developer and Product Designer junior based in Brittany.
-                //p.intro.col-lg-12.text-center.col-xs-12 Hello! My name is Pierre Nel, and I'm a London-based freelancer. If I'm not freelancing at some of London's finest digital agencies, I'm working remotely on projects for clients all over the world.<br>I have a diverse set of skills, ranging from design, to HTML + CSS + Javascript, all the way to PHP, custom Drupal module development and Linux server administration.
-
-                //ul.social.col-lg-12.col-xs-12
-                    li.col-lg-2.col-lg-offset-2.col-xs-3
-                        a.icon.ion-social-github(href="#")
-                    li.col-lg-2.col-xs-3
-                        a.icon.ion-social-twitter(href="#")
-                    li.col-lg-2.col-xs-3
-                        a.icon.ion-social-linkedin(href="#")
-                    li.col-lg-2.col-xs-3
-                        a.icon.ion-social-googleplus(href="#")
-
-                //ul.menu.col-lg-12.text-center
-                    -var list = {"home":"#home", "about me":"#about", "skill":"#skill", "contact":"#contact"}
-                    each link, item in list
-                        li.text-capitalize.col-lg-12.col-xs-12: a(href= link) #{item}
+                  span.whoiam Ronald Marcel
+                  span.role Front End Developer and Product Designer junior based in Brittany.
+                  .separeted
+                  ul.social
+                      li
+                          a.icon.ion-social-github(href="#")
+                      li
+                          a.icon.ion-social-twitter(href="#")
+                      li
+                          a.icon.ion-social-linkedin(href="#")
+                      li
+                          a.icon.ion-social-googleplus(href="#")
+            nav
+              //.container-fluid
+              ul
+                -var list = {"home":"#home", "about me":"#aboutme", "skill":"#skill", "projects":"#project", "contact":"#contact"}
+                each link, item in list
+                    li: a(href= link) #{item}
+            //.button
+              .next
+        section#aboutme.container-fluid
+          .row
+            .aboutme
+              h4 About me
+              hr
+              p I’m Roy a freelance designer & front end developer based in the UK, working Globaly with Startups and Agencies. I design & develop compelling apps, intuitive interfaces, and engaging brands. All helping to improve response, drive sales, and boost profitability.I’ve been lucky to work with:

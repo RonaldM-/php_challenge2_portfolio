@@ -5,7 +5,7 @@
     <meta author="Ronald Marcel"/>
     <meta language="Fr"/>
     <title>Portfolio</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <!--link(href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")-->
     <link href="build/css/ionicons.min.css" rel="stylesheet" type="text/css"/>
     <!--link(href='build/onepage-scroll/onepage-scroll.css')-->
     <link href="build/css/style.css" rel="stylesheet" type="text/css"/>
@@ -22,7 +22,7 @@
   <!--nav.navbar.navbar-default.navbar-fixed-top
   .container-fluid
     ul.nav.navbar-nav
-        -var list = {"home":"#home", "about me":"#about", "skill":"#skill", "contact":"#contact"}
+        -var list = {"home":"#home", "aboutme":"#aboutme", "skill":"#skill", "contact":"#contact"}
         each link, item in list
             li.text-capitalize: a(href= link) 
   
@@ -30,30 +30,42 @@
 </header>
 <section class="container-fluid" id="home">
   <div class="row">
-    <div class="profil col-xs-12">
+    <div class="profil">
       <div class="round_outter">
         <div class="round_inner">
           <div class="portrait"></div>
         </div>
       </div>
-      <div class="aboutme"><span class="whoiam col-lg-12 text-center col-xs-12">Ronald Marcel</span><span class="role col-lg-12 text-center col-xs-12">Front End Developer and Product Designer junior based in Brittany.</span></div>
-      <!--p.intro.col-lg-12.text-center.col-xs-12 Hello! My name is Pierre Nel, and I'm a London-based freelancer. If I'm not freelancing at some of London's finest digital agencies, I'm working remotely on projects for clients all over the world.<br>I have a diverse set of skills, ranging from design, to HTML + CSS + Javascript, all the way to PHP, custom Drupal module development and Linux server administration.-->
-      <!--ul.social.col-lg-12.col-xs-12
-      li.col-lg-2.col-lg-offset-2.col-xs-3
-          a.icon.ion-social-github(href="#")
-      li.col-lg-2.col-xs-3
-          a.icon.ion-social-twitter(href="#")
-      li.col-lg-2.col-xs-3
-          a.icon.ion-social-linkedin(href="#")
-      li.col-lg-2.col-xs-3
-          a.icon.ion-social-googleplus(href="#")
-      
-      -->
-      <!--ul.menu.col-lg-12.text-center
-      -var list = {"home":"#home", "about me":"#about", "skill":"#skill", "contact":"#contact"}
-      each link, item in list
-          li.text-capitalize.col-lg-12.col-xs-12: a(href= link) 
-      -->
+      <div class="aboutme"><span class="whoiam">Ronald Marcel</span><span class="role">Front End Developer and Product Designer junior based in Brittany.</span>
+        <div class="separeted"></div>
+        <ul class="social">
+          <li><a class="icon ion-social-github" href="#"></a></li>
+          <li><a class="icon ion-social-twitter" href="#"></a></li>
+          <li><a class="icon ion-social-linkedin" href="#"></a></li>
+          <li><a class="icon ion-social-googleplus" href="#"></a></li>
+        </ul>
+      </div>
+    </div>
+    <nav>
+      <!--.container-fluid-->
+      <ul>
+        <li><a href="#home">home</a></li>
+        <li><a href="#aboutme">about me</a></li>
+        <li><a href="#skill">skill</a></li>
+        <li><a href="#project">projects</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+    <!--.button.next
+    -->
+  </div>
+</section>
+<section class="container-fluid" id="aboutme">
+  <div class="row">
+    <div class="aboutme">
+      <h4>About me</h4>
+      <hr/>
+      <p>I’m Roy a freelance designer & front end developer based in the UK, working Globaly with Startups and Agencies. I design & develop compelling apps, intuitive interfaces, and engaging brands. All helping to improve response, drive sales, and boost profitability.I’ve been lucky to work with:</p>
     </div>
   </div>
 </section>
