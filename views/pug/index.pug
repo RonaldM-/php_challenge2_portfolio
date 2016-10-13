@@ -17,8 +17,8 @@ html
   body
 <!--     .wappers.row -->
 
-        header.container-fluid
-          //nav.navbar.navbar-default.navbar-fixed-top
+        //header.container-fluid
+          nav.navbar.navbar-default.navbar-fixed-top
             .container-fluid
               ul.nav.navbar-nav
                   -var list = {"home":"#home", "aboutme":"#aboutme", "skill":"#skill", "contact":"#contact"}
@@ -26,7 +26,6 @@ html
                       li.text-capitalize: a(href= link) #{item}
 
         section#home.container-fluid
-          .row
             .profil
                 .round_outter
                   .round_inner
@@ -44,17 +43,67 @@ html
                           a.icon.ion-social-linkedin(href="#")
                       li
                           a.icon.ion-social-googleplus(href="#")
-            nav
-              //.container-fluid
-              ul
-                -var list = {"home":"#home", "about me":"#aboutme", "skill":"#skill", "projects":"#project", "contact":"#contact"}
-                each link, item in list
-                    li: a(href= link) #{item}
-            //.button
-              .next
+            .box.row
+              nav#sc3
+                //.container-fluid
+                ul
+                  -var list = {"home":"#home", "about me":"#aboutme", "skill":"#skill", "projects":"#project", "contact":"#contact"}
+                  each link, item in list
+                      li: a(href= link) #{item}
+              //.button
+                .next
         section#aboutme.container-fluid
           .row
-            .aboutme
+            .about
               h4 About me
               hr
               p I’m Roy a freelance designer & front end developer based in the UK, working Globaly with Startups and Agencies. I design & develop compelling apps, intuitive interfaces, and engaging brands. All helping to improve response, drive sales, and boost profitability.I’ve been lucky to work with:
+        section#project
+          .container
+              ul.filter
+                -var list = {"all":"all", "development":"development", "design":"design", "user experience":"user_x"}
+                each link, item in list
+                    li: a(href= link) #{item}
+              .portfolio
+                div.boxx
+                  img
+                  h3 zeeze
+                  p zezezez
+                div.boxx
+                  img
+                  h3 zezezez
+                  p zezezez
+                div.boxx
+                  img
+                  h3 ezeze
+                  p zezeze
+                div.boxx
+                  img
+                  h3 ezeze
+                  p zezeze
+                div.boxx
+                  img
+                  h3 éé"é"d
+                  p fsffefr
+                div.boxx
+                  img
+                  h3 gf""fd"
+                  p efzdfd
+                div.boxx
+                  img
+                  h3 é"e"edé
+                  p efefzf
+                div.boxx
+                  img
+                  h3 dfdf"fé
+                  p élkkll
+        section#contact
+          .container-contact
+            h2 Restons en contact
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              form(role="form")
+                input(type="text", placeholder="Enter text")
+                input(type="text", placeholder="Enter text")
+                input(type="text", placeholder="Enter text")
+                textarea(type="text", placeholder="Enter text")
+                button
