@@ -57,6 +57,6 @@ module.exports = function (grunt) {
     //grunt.loadNpmTasks('grunt-slim');
 
   // Default task.
-    grunt.registerTask('default', ['pug', 'watch']);
+    grunt.registerTask('defaul', ['pug', 'watch']);
 
 };

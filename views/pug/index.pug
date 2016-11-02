@@ -32,17 +32,17 @@ html
                     .portrait
                 .aboutme
                   span.whoiam Ronald Marcel
-                  span.role Front End Developer and Product Designer junior based in Brittany.
+                  span.role Front End Developer and Product Designer junior </br> based in Brittany.
                   .separeted
                   ul.social
                       li
-                          a.icon.ion-social-github(href="#")
+                          a.ion-social-github(href="#")
                       li
-                          a.icon.ion-social-twitter(href="#")
+                          a.ion-social-twitter(href="#")
                       li
-                          a.icon.ion-social-linkedin(href="#")
+                          a.ion-social-linkedin(href="#")
                       li
-                          a.icon.ion-social-googleplus(href="#")
+                          a.ion-social-googleplus(href="#")
             .box.row
               nav#sc3
                 //.container-fluid
@@ -50,60 +50,130 @@ html
                   -var list = {"home":"#home", "about me":"#aboutme", "skill":"#skill", "projects":"#project", "contact":"#contact"}
                   each link, item in list
                       li: a(href= link) #{item}
-              //.button
-                .next
+              .next
+                .toggle_next
+                  i.ion-ios-arrow-thin-down
+                .indication
+                  p
+                    | ou
+                    br
+                    | scroller
         section#aboutme.container-fluid
           .row
             .about
               h4 About me
-              hr
-              p I’m Roy a freelance designer & front end developer based in the UK, working Globaly with Startups and Agencies. I design & develop compelling apps, intuitive interfaces, and engaging brands. All helping to improve response, drive sales, and boost profitability.I’ve been lucky to work with:
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+            .skilldev
+              .codedev
+
+            .skilltools
+              .tools
+                .toolHtml.toolbox
+                  .title
+                    h4  Html Tools:
+                  .list-tools
+                    ul
+                      li Jade.Js /Pug.Js
+                      li Slim Ruby
+                .toolCss.toolbox
+                  .title
+                    h4  Css Tools:
+                  .list-tools
+                    ul
+                      li Bootstrap
+                      li Materialize
+                .toolJs.toolbox
+                  .title
+                    h4  Javascript Tools:
+                  .list-tools
+                    ul
+                      li AngularJs 1
+                      li Jquery
+                      li React
+                .toolWorkflow.toolbox
+                  .title
+                    h4  Workflow Tools:
+                  .list-tools
+                    ul
+                      li Git
+                      li Grunt
+
         section#project
-          .container
-              ul.filter
-                -var list = {"all":"all", "development":"development", "design":"design", "user experience":"user_x"}
-                each link, item in list
-                    li: a(href= link) #{item}
+          .wrapper
+              .select
+                ul.filter
+                  -var list = {"all":"all", "development":"development", "design":"design", "ux/ui":"user_x"}
+                  each link, item in list
+                      li(class= link) #{item}
               .portfolio
-                div.boxx
-                  img
-                  h3 zeeze
-                  p zezezez
-                div.boxx
-                  img
-                  h3 zezezez
-                  p zezezez
-                div.boxx
-                  img
-                  h3 ezeze
-                  p zezeze
-                div.boxx
-                  img
-                  h3 ezeze
-                  p zezeze
-                div.boxx
-                  img
-                  h3 éé"é"d
-                  p fsffefr
-                div.boxx
-                  img
-                  h3 gf""fd"
-                  p efzdfd
-                div.boxx
-                  img
-                  h3 é"e"edé
-                  p efefzf
-                div.boxx
-                  img
-                  h3 dfdf"fé
-                  p élkkll
+                .swap
+                  div.sample
+                    img
+                    h3 zeeze
+                    p zezezez
+                  div.sample
+                    img
+                    h3 zezezez
+                    p zezezez
+                  div.sample
+                    img
+                    h3 ezeze
+                    p zezeze
+                  div.sample
+                    img
+                    h3 ezeze
+                    p zezeze
+                  div.sample
+                    img
+                    h3 éé"é"d
+                    p fsffefr
+                  div.sample
+                    img
+                    h3 gf""fd"
+                    p efzdfd
+                  div.sample
+                    img
+                    h3 é"e"edé
+                    p efefzf
+                  div.sample
+                    img
+                    h3 dfdf"fé
+                    p élkkll
+                  div.sample
+                    img
+                    h3 dfdf"fé
+                    p élkkll
+                  div.sample
+                    img
+                    h3 gf""fd"
+                    p efzdfd
+                  div.sample
+                    img
+                    h3 é"e"edé
+                    p efefzf
+                  div.sample
+                    img
+                    h3 dfdf"fé
+                    p élkkll
+                  div.sample
+                    img
+                    h3 dfdf"fé
+                    p élkkll
+
         section#contact
           .container-contact
-            h2 Restons en contact
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              form(role="form")
-                input(type="text", placeholder="Enter text")
-                input(type="text", placeholder="Enter text")
-                input(type="text", placeholder="Enter text")
-                textarea(type="text", placeholder="Enter text")
-                button
+            .info_contact
+              h2 Restons en contact
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            .form_contact
+                form(method="POST").form-horizontal
+                  .form_group.middle_width
+                    input(type="text", placeholder="Prénom").top
+                  .form_group.middle_width
+                    input(type="text", placeholder="Nom").top
+                  .form_group.full_width
+                    input(type="email", placeholder="Email")
+                  .form_group.full_width
+                    textarea(type="text", placeholder="Message")
+                  .form_group.full_width
+                    button.send Envoyer
