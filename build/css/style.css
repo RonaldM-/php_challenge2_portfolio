@@ -217,6 +217,7 @@ a{
   background-color: transparent;
   border: 2px solid;
   padding-top: 16px;
+  cursor: pointer;
 }
 .toggle_next i{
   line-height: 100%;
