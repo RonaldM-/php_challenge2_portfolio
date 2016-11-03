@@ -48,6 +48,20 @@ module.exports = function (grunt) {
                     ext: '.html'
                 }]
             }
+        },
+        sass: {
+            compile:{
+                options:{
+                    style: 'expanded'
+                },
+                files: [{
+                    expand:true,
+                    cwd: 'views/sass/',
+                    src:['{,*/}*.scss'],
+                    dest:'build/css/',
+                    ext:'.css'
+                }]
+            }
         }
     });
 
@@ -55,8 +69,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-pug');
     //grunt.loadNpmTasks('grunt-slim');
+    grunt.loadNpmTasks('grunt-contrib-sass');
 
   // Default task.
-    grunt.registerTask('defaul', ['pug', 'watch']);
+    grunt.registerTask('defaul', ['pug','watch','sass']);
 
 };
