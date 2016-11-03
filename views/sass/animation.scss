@@ -1,0 +1,23 @@
+//Animation bouton down
+.toggle_next{
+  position: relative;
+  .ion-ios-arrow-thin-down {
+    left: 22px;
+    top: 3px;
+    position: absolute;
+    animation-name: slideDown;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;;
+  }
+}
+@keyframes slideDown {
+from {
+    transform: translateY(0px);
+  }
+
+to{
+    transform: translateY(20px);
+  }
+}

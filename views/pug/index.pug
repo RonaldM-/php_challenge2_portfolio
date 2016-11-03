@@ -4,16 +4,11 @@ html
     meta(author='Ronald Marcel' )
     meta(language='Fr' )
     title Portfolio
-    //link(href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
     link(href='build/css/ionicons.min.css', rel='stylesheet', type='text/css')
-    //link(href='build/onepage-scroll/onepage-scroll.css')
     link(href='build/css/style.css', rel='stylesheet', type='text/css')
+    link(href='build/css/master.css', rel='stylesheet', type='text/css')
     //script(src='build/js/jquery-2.2.4.js')
-    //script(src='https://code.jquery.com/ui/1.12.0/jquery-ui.js')
     //script(src='build/js/script.js')
-    //script(src='build/js/callinjson.js')
-    //script(src='build/onepage-scroll/jquery.onepage-scroll.min.js')
-    //script(src='node_modules/progressbar.js/progressbar.min.js')
   body
 <!--     .wappers.row -->
 
@@ -26,38 +21,41 @@ html
                       li.text-capitalize: a(href= link) #{item}
 
         section#home.container-fluid
-            .profil
-                .round_outter
-                  .round_inner
-                    .portrait
-                .aboutme
-                  span.whoiam Ronald Marcel
-                  span.role Front End Developer and Product Designer junior </br> based in Brittany.
-                  .separeted
-                  ul.social
-                      li
-                          a.ion-social-github(href="#")
-                      li
-                          a.ion-social-twitter(href="#")
-                      li
-                          a.ion-social-linkedin(href="#")
-                      li
-                          a.ion-social-googleplus(href="#")
-            .box.row
-              nav#sc3
-                //.container-fluid
-                ul
-                  -var list = {"home":"#home", "about me":"#aboutme", "skill":"#skill", "projects":"#project", "contact":"#contact"}
-                  each link, item in list
-                      li: a(href= link) #{item}
-              .next
-                .toggle_next
-                  i.ion-ios-arrow-thin-down
-                .indication
-                  p
-                    | ou
-                    br
-                    | scroller
+          .container-fluid
+            .row
+              .block
+                .profil
+                    .round_outter
+                      .round_inner
+                        .portrait
+                    .aboutme
+                      span.whoiam Ronald Marcel
+                      span.role Front End Developer and Product Designer junior </br> based in Brittany.
+                      .separeted
+                      ul.social
+                          li
+                              a.ion-social-github(href="#")
+                          li
+                              a.ion-social-twitter(href="#")
+                          li
+                              a.ion-social-linkedin(href="#")
+                          li
+                              a.ion-social-googleplus(href="#")
+                .box
+                  nav#sc3
+                    //.container-fluid
+                    ul
+                      -var list = {"home":"#home", "about me":"#aboutme", "skill":"#skill", "projects":"#project", "contact":"#contact"}
+                      each link, item in list
+                          li: a(href= link) #{item}
+                  .next
+                    .toggle_next
+                      i.ion-ios-arrow-thin-down
+                    .indication
+                      p
+                        | ou
+                        br
+                        | scroller
         section#aboutme.container-fluid
           .row
             .about

@@ -33,16 +33,16 @@ a:visited {
   color: rgb(102, 102, 102);
   padding-top: 1px;
 }
-.profil{
-  /*padding-top: 60px;*/
+/* .profil{
+  padding-top: 60px;
   display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: auto/*60%*/;
+  height: auto60%;
   margin-top: 50px;
-  /*background-color: #E6726C;*/
-}
+  background-color: #E6726C;
+} */
 .aboutme{
   margin-top: 30px;
   /* background-color: black; */
@@ -216,13 +216,13 @@ a{
   border-radius: 100%;
   background-color: transparent;
   border: 2px solid;
-  padding-top: 16px;
+  /*padding-top: 16px;*/
   cursor: pointer;
 }
 .toggle_next i{
   line-height: 100%;
   font-size: 36px;
-  padding-top: 24px;
+
 }
 .indication p{
   font-size: 14px;

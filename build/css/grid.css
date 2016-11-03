@@ -1,30 +1,3 @@
-/*
-developer: Ronald MARCEL
-Website:
-Object: Portfolio
-*/
-.toggle_next {
-  position: relative;
-}
-.toggle_next .ion-ios-arrow-thin-down {
-  left: 22px;
-  top: 3px;
-  position: absolute;
-  animation-name: slideDown;
-  animation-direction: alternate;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-}
-
-@keyframes slideDown {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(20px);
-  }
-}
 .col-1 {
   width: 8.33333%;
   float: left;
@@ -186,21 +159,4 @@ Object: Portfolio
   margin: 0 auto;
 }
 
-#home {
-  display: none;
-}
-
-.profil {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: auto;
-  padding-top: 50px;
-}
-
-#project, #contact {
-  display: none;
-}
-
-/*# sourceMappingURL=master.css.map */
+/*# sourceMappingURL=grid.css.map */

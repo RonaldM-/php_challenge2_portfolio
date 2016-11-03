@@ -3,3 +3,25 @@ developer: Ronald MARCEL
 Website:
 Object: Portfolio
 */
+@import "animation.scss";
+@import "grid.scss";
+@import "font.scss";
+
+//SECTION HOME
+#home{
+  display: none;
+}
+.profil{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto/*60%*/;
+  padding-top: 50px;
+}
+
+
+//SECTION HOME
+#project, #contact{
+  display: none;
+}
